@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+
+  <style type="text/css">
+    /*초기값 설정 Start*/
+    body, h1, h2, ol, li, dl, dt, dd, a{margin:0px; padding:0;}
+    ol{list-style:none;}
+    /*고딕계열과 명조계열을 구분하여 5가지 내외의 서브 폰트까지 기입*/
+    /*line-height : 기본적인 가독성과 반응형 웹사이트 구축에 1.4em을 많이 사용*/
+    /*color-code : 0~9 와 A~F 의 6자리 문자의 조합으로 이루어져 있음.
+     0에 가까울수록 컬러배합율이 낮으며, F에 가까울수록 컬러배합율이 높음
+     RGB : #RRGGBB : 가산혼합
+     - white = #ffffff = #fff
+     - red = #ff0000 = #f00
+     - blue = #0000ff = #00f
+     - green = #00ff00 = #0f0
+     - black = #000000 = #000*/
+     /*margin : 박스 밖의 여백*/
+     /*padding : 요소와 박스간의 여백*/
+     /*block : 모든 css 속성이 다 적용, 인라인 보다는 공간이 큰 요소*/
+     /*inline : 공간이 작고, margin과 padding 사용시 오류가 발생
+     해결을 위해 인라인 요소에는 display:block 코드를 사용하여  css적용*/
+    body{font-family:'나눔고딕', 'Nanum Gothic', NanumGothic, '굴림', sans-serif, arial;
+          font-size: 13px; line-height:1.4em; color:#555;}
+
+    /*초기값 설정 End*/
+
+
+
+    body #contents{width:1000px; margin:30px auto;} /*contents 영역의 박스를 가운데로 정렬*/
+    h1{font-size:34px; color:#333; padding-bottom:50px; margin-bottom:50px; border-bottom:1px solid} /*border{10px; solid/dashed/dotted;}*/
+    h2{font-size:28px; color:#fb598a; font-weight:normal; letter-spacing:-3px; margin:0 0 20px;} /*letter-spacing : 자간 조절, 음수값을 주면 좁아짐*/
+
+    ol li{margin:60px 0;}
+    /*  il li:nth-child(1) : ol>li 중 첫번째 요소*/
+    /*background{url('./이미지경로/name.jpg') 100% 50%} : 마지막은 정렬-기본값은 left-tops, 가로% 세로%*/
+    ol li:nth-child(1){background:#000 url('./img/isoi_img1.jpg') no-repeat 100% 30%;}
+    ol li:nth-child(2){background:url('./img/isoi_img2.jpg') no-repeat 100%;}
+    ol li:nth-child(3){height:153px; background:url('./img/isoi_img3.jpg') no-repeat 100%;}
+    ol li:nth-child(4){background:url('./img/isoi_img4.jpg') no-repeat 100%;}
+    ol li:nth-child(5){background:url('./img/isoi_img5.jpg') no-repeat 100%;}
+
+    dl{width:750px;}
+    dl dt{font-size:18px;}
+    dl dt em{font-style:normal; color:#fb598a;}
+    dl dd{margin:20px 0;}
+    dl dd a{background:#555;text-decoration:none;
+      color:#fff; font-size:14px; display:block; width:200px; text-align:center; padding:7px 0;}
+
+
+
+  </style>
+
+
+
+  <title>아이소이</title>
+</head>
+<body>
+
+
+  <div id="contents">
+    <h1>아이소이 브랜드 story</h1>
+  <ol>
+    <li>
+      <h2>01</h2>
+      <dl>
+      <dt>아이소이는 <em>NO마크 캠페인</em>을 실천합니다.</dt>
+        <dd>
+            화장품을 만들떄, 좋다는 성분 몇 가지 더 넣는 것보다 유해의심화학성분을 빼고 만드는 것이 비용이나 생산면에서 백배는 어렵습니다.
+            화장품에 표기 된 수 많은 성분 중 일부는 단지 향을 좋게, 발림성만을 좋게, 오래 보관하기 위해 첨가되며, 피부에 자극과 알레르기를
+            유발할 수 있습니다. 아이소이는 전제품에 이러한 유해의심화학성분을 첨가하지 않는 원칙을 지킵니다.
+        </dd>
+        <dd> <a href="#">화장품 속 유해의심화학성분</a> </dd>
+      </dl>
+    </li>
+    <li>
+      <h2>02</h2>
+      <dl>
+      <dt>아무나 가질 수 없는 특상품 <em>불가리안 로즈</em>를 15년 이상 직접 수입해 왔습니다.</dt>
+        <dd>
+            전 세계 수 많은 로즈오일 중 아이소이가 시중에서 구하기 어려운 불가리안 로즈 오일을 화장품 원료로 넣을 수 있었던 것은 1999년부터 15년 이상
+            천원 화장품 원료중 특상품 불가리안 로즈 오일을 직접 수입하는 비지니스에 큰 노하우를 가지고 있었기 떄문입니다. 비싼 가격 떄문에 감히
+            화장품 원료로 넣을 수 없었던 바로 그 특상품 로즈오일이 아이소이 화장품의 피부개선 효과를 높이는 일등공신입니다.
+        </dd>
+        <dd><a href="#">불가리안 로즈스토리</a></dd>
+      </dl>
+    </li>
+
+    <li>
+      <h2>03</h2>
+      <dl>
+        <dt>유해의심화학성분 대신 천연유래 성분을 넣었습니다.</dt>
+        <dd>아이소이의 주성분은 거의 대부분 천연유래성분으로 사용하고 있습니다. 계면활성제, 오일, 색소, 향, 방부제, 알코올조차
+        천연 그대로의 것을 사용합니다. 바로바로 생산해날 수 있는 인스턴트 같은 화학성분이 아닌, 식물이자라고 가장 최적의 시기에 수확되어
+        사람에게도 이로운 성분이 되기까지 오랜 숙성을 거친 천연 성분과 같이 아이소이의 전 제춤은 까다로운 공정을 거쳐 생산됩니다.</dd>
+      </dl>
+    </li>
+
+    <li>
+      <h2>04</h2>
+      <dl>
+        <dt>40년 전통 독일 천연화장품 로고나의 철학과 함께 합니다.</dt>
+        <dd>
+          순수자연으로 피부를 아름답게 만들 수 있다는 로고나의 철학. 21세기가 시작되고, 대학민국에 유해화학성분 없는 유기농 화장품을 소개했던
+          그 사람들이 독일 로고나의 철학을 함께하며 천연명품 [아이소이]를 탄생시켰습니다. 화장품은 사람 몸에 흡수되는 것이니
+          몸에 나쁜 성분은 절대 넣지 않겠다는 고집스러운 철학이 바로 아이소이의 존재이유입니다.
+        </dd>
+      </dl>
+    </li>
+
+    <li>
+      <h2>05</h2>
+      <dl>
+        <dt>뷰티기업으로서 진정한 피부개선을 실현합니다.</dt>
+        <dd>
+          화장품성분으로 허가는 되어있지만 사람 몸에 유해한 저렴한성분을 사용하여 기업으로서 많은 이익을 남길 수도 있습니다.
+          하지만 아잉소이는 피부고민의 해답은 오로지 천연유래 성분만이 정답이라는 믿음으로 피부를 숨쉬게 하고,
+          자생력을 키워주고, 탄력과 영양을 주어 단순히 아름다워 보이는 것이 아닌 아름다워 지는 미를 위해 기업의 책임을 다할 것입니다.
+        </dd>
+      </dl>
+    </li>
+  </ol>
+
+</div>
+<!--contents End-->
+
+
+</body>
+</html>
