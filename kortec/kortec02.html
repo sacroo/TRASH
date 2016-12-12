@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<!--
+
+  재무정보 : http://www.kortek.co.kr/kor/investment/financialInformation.do
+  주가정보 : http://www.kortek.co.kr/kor/investment/stockInformation.do
+
+-->
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=
+  , initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>kortek - 주가정보</title>
+
+
+  <style>
+
+    /*초기값 설정*/
+    *{ padding: 0; margin: 0; text-decoration: none;}
+    body{width:1300px; height: 2000px; font-family:'Noto Sans KR', sans-serif, arial; font-size: 14px; color:#555; line-height:1.4em;}
+
+    #header{width: 1200px; height:300px; float:left; margin: 0px 50px 0px 50px;
+      background: url('./kortec_img/kortec_bg00.jpg') no-repeat;
+
+    }
+    #header .gnb{background-color: white; width:1000px; height: 80px; padding: 5px; margin: 20px 100px 0px 100px; }
+    #header .gnb li{float: left; list-style: none; font-size:20px; margin:10px 10px; }
+    #header h1{font-size: 40px; margin:120px 0px 0px 100px; color:#2756A6;}
+
+
+
+
+
+    #container{width: 1200px; float:left; margin: 0px 50px 0px 50px;}
+    #container .page_nav{font-size: 15px; margin: 0px 20px 50px 800px;  padding:20px;}
+    #container .content{width:960px; margin:0px 120px auto;}
+    #container .content p{width:960px; text-align:center; margin-bottom: 50px;}
+    #container .content h1{width:960px; text-align:center; margin-bottom: 50px;
+       text-decoration:overline; line-height: 2.0em}
+
+
+    #container table{width:960px; margin-bottom: 50px; border-spacing:0px; border-collapse: collapse;}
+    #container tr, td{padding-top:10px; padding-bottom:10px; text-align: center; border-bottom: 1px solid #e5e5e5;}
+    #container th{background-color:#e1e1e1; font-weight: bold;  color: #444; padding: 0 8px;}
+    #container .tb01{float:left; width:600px; height:455px; margin:0px 15px 50px 0px;}
+    #container .tb02{float:left; width:330px; height:455px; margin:0px 0px 50px 15px;}
+
+    #container .tb02 .blue{background-color:#F2F9FF; color:#2756A6;}
+    #container .tb02 .red{background-color:#FEF0F0; color:#EF1B4D;}
+    #container .tb02 .blue td:nth-last-child(1){background-color:#FFF; color:#000;}
+    #container .tb02 .red td:nth-child(1){background-color:#FFF; color:#000;}
+    #container .tb02 td:nth-child(2) {color:#000}
+    #container .tb02 tr:nth-last-child(1){background-color:#fff; font-weight: bold;}
+    #container .tb02 tr:nth-last-child(1) td:nth-child(1){color:#2756A6;}
+    #container .tb02 tr:nth-last-child(1) td:nth-last-child(1){color:#EF1B4D;}
+
+    #container .tb03 td:nth-child(2) {font-weight: bold;}
+    #container .tb03 .up{color:#EF1B4D;}
+    #container .tb03 .down{color:#2756A6;}
+
+
+
+    em{font-size: 50px; font-weight:bold;}
+    .bg_blue{background-color:skyblue; font-weight:bold;}
+    caption{display:none;}
+    button{color: #B5B5B5; tel:010-2751-4403; padding: 10px; margin:80px 320px 20px 320px;border:1px solid #e1e1e1; border-radius:8px; font-size:30px; background-color: white;}
+    a:hover{color: blue; text-decoration-line: underline;}
+    a:link, a:visited {
+        background-color: white;
+        color: #gray;
+        padding: 5px 10px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+    }
+
+</style>
+</head>
+
+
+
+
+
+
+<body>
+  <!--================ header Start ==================-->
+<div id="header">
+      <div class="gnb">
+          <ul class="gnb-ul">
+            <li><a href="#"><img src="./kortec_img/header_logo.jpg" alt="헤더 기업 메인로고"></a></li>
+
+            <li class="gnb_m">  <a href="#">MARKET</a></li>
+            <li class="gnb_m">  <a href="#">PRODCUT</a></li>
+            <li class="gnb_m">  <a href="#">채용센터</a></li>
+            <li class="gnb_m">  <a href="#">투자정보</a></li>
+            <li class="gnb_m">  <a href="#">고객지원</a></li>
+            <li class="gnb_m">  <a href="#">기업소개</a></li>
+          </ul>
+
+      </div>
+
+    <h1>주가정보</h1>
+
+</div>
+  <!--================ header End ==================-->
+
+  <!--================ container Start ================-->
+<div id="container">
+
+    <div class="page_nav">
+      <ul>
+        <li>home</li>
+        <li>주가정보</li>
+        <li>주가정보</li>
+
+      </ul>
+
+    <div class="content">
+      <h1>주가정보</h1>
+      <p>
+        코텍의 실시간 주가정보를 확인하실 수 있습니다.
+      </p>
+       <em>14,350</em> 전일대비0 / 등락률 +0.00%
+      <table class="tb00" summary="전일대비 등락률 테이블">
+        <caption>전일대비 등락률</caption>
+        <thead>
+          <tr>
+            <th>시가(원)</th>
+            <th>고가(원)</th>
+            <th>저가(원)</th>
+            <th>거래량(주)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>14,300</td>
+            <td>14,600</td>
+            <td>14,100</td>
+            <td>100,524</td>
+          </tr>
+        </tbody>
+        </table>
+
+        <table class="tb01" summary="코스닥 테이블">
+          <thead>
+            <tr>
+                  <th colspan="4">KOSDAQ / 인터넷</th>
+            </tr>
+          </thead>
+          <tbody>
+
+            <tr>
+              <td>현재가</td>
+              <td colspan="3">14,350</td>
+            </tr>
+            <tr>
+              <td>전일대비</td>
+              <td>0</td>
+              <td>전일종가</td>
+              <td>14,350</td>
+            </tr>
+            <tr>
+              <td>상한가(원)</td>
+              <td>0</td>
+              <td>52주최고(원)</td>
+              <td>14,600</td>
+            </tr>
+            <tr>
+              <td>하안가(원)</td>
+              <td>10,050</td>
+              <td>52주최저(원)</td>
+              <td>10,550</td>
+            </tr>
+            <tr>
+              <td>거래대금</td>
+              <td colspan="3">1,446,525,450</td>
+            </tr>
+            <tr>
+              <td>PER</td>
+              <td colspan="3">8.05</td>
+            </tr>
+            <tr>
+              <td>상장주식 수</td>
+              <td colspan="3">15,574,552</td>
+            </tr>
+            <tr>
+              <td>액면가(원)</td>
+              <td colspan="3">500</td>
+            </tr>
+          <tr>
+            <td>상장일</td>
+            <td>2001년 7월 1일</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <table class="tb02" summary="매도잔량	호가	매수잔량 테이블">
+        <thead>
+          <tr>
+            <th>매도잔량</th>
+            <th>호가</th>
+            <th>매수잔량</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr class="blue">
+            <td>0</td>
+            <td>0</td>
+            <td></td>
+          </tr>
+          <tr class="blue">
+            <td>0</td>
+            <td>0</td>
+            <td></td>
+          </tr>
+          <tr class="blue">
+            <td>6,571</td>
+            <td>14,500</td>
+            <td></td>
+          </tr>
+          <tr class="blue">
+            <td>1,845</td>
+            <td>14,450</td>
+            <td></td>
+          </tr>
+          <tr class="red">
+            <td></td>
+            <td>14,350</td>
+            <td>297</td>
+          </tr>
+          <tr class="red">
+            <td></td>
+            <td>14,300</td>
+            <td>4,356</td>
+          </tr>
+          <tr class="red">
+            <td></td>
+            <td>14,250</td>
+            <td>10,027</td>
+          </tr>
+          <tr class="red">
+            <td></td>
+            <td>0</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>8,416</td>
+            <td>총잔량</td>
+            <td>14,680</td>
+          </tr>
+
+        </tbody>
+
+      </table>
+
+
+    <p>일자별 시세</p>
+      <table class="tb03" summary="총 행 열의 일자별 시세표이며 일자, 종가, 전일대비, 거래량, 거래대금, 시가, 고가, 저가의 정보를 담고있습니다.">
+        <caption></caption>
+        <thead>
+        <tr>
+          <th>일자</th>
+          <th>종가</th>
+          <th>전일대비</th>
+          <th>거래량</th>
+          <th>거래대금</th>
+          <th>시가</th>
+          <th>고가</th>
+          <th>저가</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>16/12/09</td>
+          <td>14,350</td>
+          <td>0</td>
+          <td>1,446,525,450</td>
+          <td>14,300</td>
+          <td>14,600</td>
+          <td>14,100</td>
+          <td>14,100</td>
+        </tr>
+        <tr>
+          <td>16/12/09</td>
+          <td>14,350</td>
+          <td class="up">300 ▲</td>
+          <td>1,446,525,450</td>
+          <td>14,300</td>
+          <td>14,600</td>
+          <td>14,100</td>
+          <td>14,100</td>
+        </tr>
+        <tr>
+          <td>16/12/09</td>
+          <td>14,350</td>
+          <td class="down">150 ▼</td>
+          <td>1,446,525,450</td>
+          <td>14,300</td>
+          <td>14,600</td>
+          <td>14,100</td>
+          <td>14,100</td>
+        </tr>
+        <tr>
+          <td>16/12/08</td>
+          <td>14,350</td>
+          <td class="up">200 ▲</td>
+          <td>112,555</td>
+          <td>1,602,872,800</td>
+          <td>14,100</td>
+          <td>14,400</td>
+          <td>13,950</td>
+        </tr>
+
+        <tr>
+          <td>16/12/08</td>
+          <td>14,350</td>
+          <td class="up">300 ▲</td>
+          <td>112,555</td>
+          <td>1,602,872,800</td>
+          <td>14,100</td>
+          <td>14,400</td>
+          <td>13,950</td>
+        </tr>
+        <tr>
+          <td>16/12/08</td>
+          <td>14,350</td>
+          <td class="down">350 ▼</td>
+          <td>112,555</td>
+          <td>1,602,872,800</td>
+          <td>14,100</td>
+          <td>14,400</td>
+          <td>13,950</td>
+        </tr>
+        <tr>
+          <td>16/12/08</td>
+          <td>14,350</td>
+          <td class="down">300 ▼</td>
+          <td>112,555</td>
+          <td>1,602,872,800</td>
+          <td>14,100</td>
+          <td>14,400</td>
+          <td>13,950</td>
+        </tr>
+        <tr>
+          <td>16/12/08</td>
+          <td>14,350</td>
+          <td class="up">350 ▲</td>
+          <td>112,555</td>
+          <td>1,602,872,800</td>
+          <td>14,100</td>
+          <td>14,400</td>
+          <td>13,950</td>
+        </tr>
+        <tr>
+          <td>16/12/08</td>
+          <td>14,350</td>
+          <td>0</td>
+          <td>112,555</td>
+          <td>1,602,872,800</td>
+          <td>14,100</td>
+          <td>14,400</td>
+          <td>13,950</td>
+        </tr>
+        <tr>
+          <td>16/12/08</td>
+          <td>14,350</td>
+          <td>0</td>
+          <td>112,555</td>
+          <td>1,602,872,800</td>
+          <td>14,100</td>
+          <td>14,400</td>
+          <td>13,950</td>
+        </tr>
+      </tbody>
+      </table>
+
+
+  <p><a href="tel:010-2751-4403">IR 문의 032-860-3009</a></p>
+
+
+
+
+
+
+</div>
+  <!--================ container End ================-->
+
+
+
+  <!--================ footer Start ================-->
+<div id="footer">
+
+</div>
+  <!--================ footer End ================-->
+
+<div></div>
+
+
+
+</container>
+</body>
+</html>

@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<!--
+
+  재무정보 : http://www.kortek.co.kr/kor/investment/financialInformation.do
+  주가정보 : http://www.kortek.co.kr/kor/investment/stockInformation.do
+
+-->
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=
+  , initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>kortek - 재무정보</title>
+
+<style>
+
+  /*초기값 설정*/
+  *{ padding: 0; margin: 0; text-decoration: none;}
+  body{margin: 0px auto; width:1300px; height: 2000px; font-family:'Noto Sans KR', sans-serif, arial;
+  font-size: 16px; color:#555; line-height:1.4em;}
+
+  #header{width: 1200px; height:300px; float:left; margin: 0px 50px 0px 50px;
+    background: url('./kortec_img/kortec_bg00.jpg') no-repeat;
+
+  }
+  #header .gnb{background-color: white; width:1000px; height: 80px; padding: 5px; margin: 20px 100px 0px 100px; }
+  #header .gnb li{float: left; list-style: none; font-size:20px; margin:10px 10px; }
+  #header h1{font-size: 40px; text-align: center; margin:120px 100px 0px 100px; color:#2756A6;}
+
+
+  #container{width:1440px; align-content: center;}
+  .page_nav{ float: left;font-size: 15px; margin: 0px 20px 0px 1000px;  padding:20px;}
+  #container .content{float: left; width:960px; margin:0px 1500px 0px 150px;}
+  #container .content h1{font-weight: normal; text-decoration:overline; line-height: 2.0em}
+
+
+  p, h1{padding:25px; text-align: center;}
+  table{width:960px; border-spacing:0px; border-collapse: collapse;}
+  th{background-color:#e1e1e1; font-weight: bold;}
+  tr, td{padding-top:15px; padding-bottom:15px; text-align: center; border-bottom: 1px solid #e1e1e1;}
+
+  .bg_blue{background-color:#E5EFF7; font-weight:bold;}
+  caption{display:none;}
+  button{width: 500px; color:#b7b7b7; tel:010-2751-4403; padding: 15px; margin:100px 320px 20px 320px;border:1px solid #e1e1e1; border-radius:8px; font-size:28px; background-color: white;}
+  a:hover{color: blue; text-decoration-line: underline;}
+  a:link, a:visited {
+      background-color: white;
+      color: #gray;
+      padding: 5px 10px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+  }
+
+</style>
+</head>
+<body>
+  <!--================ header Start ==================-->
+<div id="header">
+  <div class="gnb">
+  <ul>
+    <li><a href="#"><img src="./kortec_img/header_logo.jpg" alt="헤더 기업 메인로고"></a></li>
+    <li><a href="#">MARKET</a></li>
+    <li><a href="#">PRODCUT</a></li>
+    <li><a href="#">채용센터</a></li>
+    <li><a href="#">투자정보</a></li>
+    <li><a href="#">고객지원</a></li>
+    <li><a href="#">기업소개</a></li>
+  </ul>
+
+  </div>
+
+    <h1>투자정보</h1>
+
+</div>
+  <!--================ header End ==================-->
+
+  <!--================ container Start ================-->
+<div id="container">
+
+    <div class="page_nav">home  투자정보  재무정보</div>
+
+
+    <div class="content">
+        <h1>재무정보</h1>
+        <p>
+        코텍의 상세한 재무정보를 제공해 드립니다.
+      </p>
+
+      손익계산서(단위: 백만원)
+      <table summary="손익계산서 테이블">
+        <caption>손익계산서</caption>
+        <thead>
+          <tr>
+            <th>구분</th>
+            <th>2013</th>
+            <th>2014</th>
+            <th>2015</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="bg_blue">
+            <td>매출액</td>
+            <td>169,811</td>
+            <td>148,846</td>
+            <td>242,013</td>
+          </tr>
+          <tr>
+            <td>매출원가</td>
+            <td>126,037</td>
+            <td>120,403</td>
+            <td>187,548</td>
+          </tr>
+          <tr>
+            <td>매출총이익</td>
+            <td>43,774</td>
+            <td>28,443</td>
+            <td>54,465</td>
+          </tr>
+          <tr>
+            <td>판매비와관리비</td>
+            <td>23,038</td>
+            <td>22,950</td>
+            <td>28,173</td>
+          </tr>
+          <tr class="bg_blue">
+            <td>영업이익</td>
+            <td>20,736</td>
+            <td>5,493</td>
+            <td>26,292</td>
+          </tr>
+          <tr>
+            <td>금융수익</td>
+            <td>1,297</td>
+            <td>1,089</td>
+            <td>792</td>
+          </tr>
+          <tr>
+            <td>금융비용</td>
+            <td>536</td>
+            <td>65</td>
+            <td>53</td>
+          </tr>
+          <tr>
+            <td>기타수익</td>
+            <td>3,279</td>
+            <td>3,642</td>
+            <td>6,871</td>
+          </tr>
+          <tr>
+            <td>기타비용</td>
+            <td>3,729</td>
+            <td>2,857	</td>
+            <td>3,135</td>
+          </tr>
+          <tr class="bg_blue">
+            <td>법인세비용차감전 순이익</td>
+            <td>21,047</td>
+            <td>7,302</td>
+            <td>30,767</td>
+          </tr>
+          <tr>
+            <td>법인세비용</td>
+            <td>3,687</td>
+            <td>972</td>
+            <td>7,584</td>
+          </tr>
+          <tr class="bg_blue">
+            <td>당기순이익</td>
+            <td>17,360</td>
+            <td>6,330</td>
+            <td>23,183</td>
+          </tr>
+        </tbody>
+      </table>
+
+
+      재무상태표 (단위:백만원)
+      <table summary="재무상태표 테이블">
+        <tr>
+          <th>구분</th>
+          <th>제 27기 <br> (2013.12.31 현재)</th>
+          <th>제 28기 <br> (2014.12.31 현재)</th>
+          <th>제 29기 <br> (2015.12.31 현재)</th>
+        </tr>
+        <tr>
+          <td>유동자산</td>
+          <td>124,982</td>
+          <td>120,930</td>
+          <td>177,582</td>
+        </tr>
+        <tr>
+          <td>비유동자산</td>
+          <td>58,925</td>
+          <td>61,378</td>
+          <td>57,914</td>
+        </tr>
+        <tr class="bg_blue">
+          <td>자산총계</td>
+          <td>188,902</td>
+          <td>12,123</td>
+          <td>324,234</td>
+        </tr>
+        <tr>
+          <td>유동부채</td>
+          <td>15,446</td>
+          <td>13,632</td>
+          <td>19,770</td>
+        </tr>
+        <tr>
+          <td>비유동부채</td>
+          <td>4,007</td>
+          <td>3,609</td>
+          <td>2,853</td>
+        </tr>
+          <tr class="bg_blue">
+          <td>부채총계</td>
+          <td>19,453</td>
+          <td>17,241</td>
+          <td>22,623</td>
+        </tr>
+        <tr>
+          <td>자본금</td>
+          <td>6,489</td>
+          <td>6,489</td>
+          <td>7,787</td>
+        </tr>
+        <tr>
+          <td>주식발행초과금</td>
+          <td>33,301</td>
+          <td>33,301</td>
+          <td>60,584</td>
+        </tr>
+        <tr>
+          <td>기타자본항목</td>
+          <td>15,755</td>
+          <td>13,291</td>
+          <td>11,766</td>
+        </tr>
+        <tr>
+          <td>이익잉여금</td>
+          <td>108,909</td>
+          <td>111,995</td>
+          <td>132,634</td>
+        </tr>
+        <tr class="bg_blue">
+          <td>자본총계</td>
+          <td>165,154</td>
+          <td>165,109</td>
+          <td>212,772</td>
+        </tr>
+        <tr class="bg_blue">
+          <td>부채외자본총계</td>
+          <td>183,907</td>
+          <td>182,907</td>
+          <td>235,395</td>
+        </tr>
+      </table>
+
+
+  <button>IR 문의 032-860-3009</button>
+
+
+
+
+
+
+</div>
+  <!--================ container End ================-->
+
+
+
+  <!--================ footer Start ================-->
+<div id="footer">
+
+</div>
+  <!--================ footer End ================-->
+
+<div></div>
+
+
+
+
+</body>
+</html>
