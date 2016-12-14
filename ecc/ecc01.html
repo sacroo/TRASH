@@ -7,7 +7,7 @@
   <title>Document</title>
 
   <style type="text/css">
-    body, ul, dl, dt, dd, span, h1, div, p, a{margin:0; padding:0;  list-style: none;}
+    body, ul, dl, dt, dd, span, h1, div, p, a,{margin:0; padding:0;  list-style: none;}
     body{color:#555; font-family:'Nanumgothic', '나눔고딕',
     NanumGothic, sans-serif,'굴림', Gulim; line-height:1.8em; }
     #wrap{width:1100px; height:2835px; margin: 0 auto;}
@@ -18,21 +18,36 @@
     .nav_program ul{width: 100%; height: 45px; background-color: #8D8070; }
     .nav_program li{width: 50%; height: 100%; float: left; text-align: center; margin-top:5px; }
 
-
+    .upper_line{margin: 0; padding: 0;}
     .program{width: 100%; font-size: 14px;}
-    .p02, .p03, .p04{margin-top:40px;}
-    .p01{width: 100%; height: 104px; background: url('./img/element_bg.jpg') no-repeat right;}
-      h2{font-size:20px; border-bottom:1px solid #ddd; padding:10px 0px;}
 
-    .p02{width: 100%; height: 231px;}
+    .p02, .p03, .p04{margin-top:1px; margin-bottom: 15px;}
+    .p01{width: 100%; height: 104px; background: url('./img/element_bg.jpg') no-repeat right;}
+      h2{font-size:20px; border-bottom:1px solid #ddd; margin-top: 0px; padding-top: 0px; padding-bottom:10px;}
+
+    .p02{width: 100%; }
     .p02 li{list-style:initial; }
 
     .p03{width: 100%; height: 856px;}
     .p03 em{color:#FFC600; font-style: normal;}
     .p03 span{color:#000; font-size:16px; font-weight: 500;}
-    .p03 li{border-bottom: 1px dotted #ddd;}
-  
+    .p03 li{border-bottom: 1px dotted #ddd; padding:20px 0px 20px 150px;}
+    .p03 li:nth-child(1){background:url('./img/level_img01.jpg') no-repeat 0 15px;}
+    .p03 li:nth-child(2){background:url('./img/level_img02.jpg') no-repeat 0 40px;}
+    .p03 li:nth-child(3){background:url('./img/level_img03.jpg') no-repeat 0 30px;}
+    .p03 li:nth-child(4){background:url('./img/level_img04.jpg') no-repeat 0 25px;}
 
+    .p04{width: 100%;}
+    .p04 ul{list-style: none;}
+    .p04 dl{width:300px; display: block; float: left; list-style: none; text-align: center;}
+    .p04 dt, dd{width:100%;}
+    .p04 ul>dl:nth-child(1){margin-right:10px;}
+    .p04 dl>dd:nth-child(2){width:300px; padding-top:150px;}
+    .p04 li:after{clear: both; height: 0; content: ''; visibility: hidden; display: block;}
+    .book01{background:url('./img/intro_img01.jpg') no-repeat 0 0;}
+    .book02{background:url('./img/intro_img02.jpg') no-repeat 0 0;}
+    .book03{background:url('./img/intro_img03.jpg') no-repeat 0 0;}
+    .book04{background:url('./img/intro_img04.jpg') no-repeat 0 0;}
 
   </style>
 
@@ -59,6 +74,7 @@
       </div>
 
       <div class="p02">
+        <p class="upper_line"><img src="./img/tit_bl.gif" alt="구분 오렌지 선"></p>
         <h2>프로그램 특징</h2>
         <ul>
           <li>체계적인 학습단계를 통한 통합적 영어능력 향상</li>
@@ -71,14 +87,16 @@
       </div>
 
       <div class="p03">
+        <p class="upper_line"><img src="img/tit_bl.gif" alt="구분 오렌지 선"></p>
+
         <h2>Level 구성</h2>
           <ul>
             <li>
-              <em>Starter (4단계) - English World</em>
+              <em>upperer (4단계) - English World</em>
               <br>
 
               <span>초등 3~6 어휘 습득 / 초등 기초 문법 학습</span>
-
+              <br>
               언어의 발달 순서를 고려한 교육과정 속에서 기본적인 Phonics 규칙을 익히고 다양한 주제 및 상황에 맞는
               생활영어의 기초를 다지며 영어를 자연스럽게 습득할 수 있도록 합니다.
               일상생활, 주변 사물 및 사람에 관련된 기본적이고 쉬운 주제에 대해 간단한 어휘나 문장을 사용하여
@@ -91,7 +109,7 @@
               <br>
 
               <span>JET 초급 / 초등 및 중등 어휘 습득 / 초등 문법 완성</span>
-
+              <br>
               다양한 읽기 지문,
               스토리북 등을 통하여 본격적으로 읽기영역이 강화되는 단계로 4대 영역의 균형 잡힌 발달과 함께
               의사소통 능력(Communicative Competence)의 향상이 이루어집니다.
@@ -104,7 +122,7 @@
               <em>ntermediate (6단계) - English Carnival</em>
               <br>
               <span>JET 중급 , 고급 / 중등 어휘 완성 / 중등 기초 문법 학습</span>
-
+              <br>
               향상된 영어 표현 능력을 바탕으로 체계적인 쓰기 활동이 가능하고
               다양한 주제별로 중급 단계의 듣기, 말하기, 읽기 쓰기 실력이 길러집니다.
               습득한 영어 규칙을 기본으로 자신이 의도하는 내용을 좀더 정확하게 말하기와
@@ -127,20 +145,26 @@
       </div>
 
       <div class="p04">
+        <p class="upper_line"><img src="./img/tit_bl.gif" alt="구분 오렌지 선"></p>
+
         <h2>교재소개</h2>
           <ul>
             <li>
               <dl>
                 <dt>English World (4단계/총 20권)</dt>
+                <dd class="book01"></dd>
                 <dd>
                   영어를 처음 접하는 초등학교 학생들을 대상으로 제작된 총 4단계
                   시리즈의 교재로, 영어의 기본적인 어휘 및 표현을 다양한 Activities로 익히는 Course Book, 파닉스의 기본 법칙들을 배우고
                   자연스럽게 영어 읽기 능력을 기르는 Phonics Book으로
                   구성되어 있습니다.
                 </dd>
-
+              </dl>
+              <dl>
                 <dt>English Playground (6단계/총 12권)</dt>
+                <dd class="book02"></dd>
                 <dd>
+
                   영어의 기초 과정을 마친 초등학교 학생들을 대상으로 제작된
                   총 6단계 시리즈의 교재로, 흥미롭고 재미있는 다양한 주제를 통해
                   의사소통 능력을 키우고 수준 높은 언어 구사력을 위한 발판을
@@ -152,15 +176,20 @@
             <li>
               <dl>
                 <dt>English Carnival (6단계/총 18권)</dt>
+                <dd class="book03"></dd>
                 <dd>
+
                   영어를 외국어로 배우는 학생들을 대상으로 개발된 중급 교재로
                   모두 6단계의 레벨로 이루어져 있습니다.
                   별책으로 제작된 Write It Right Exercise Book을 통해 체계적으로 쓰기 과정을 배우고
                   학생 스스로 자신의 글을 편집하고 검토할 수 있도록 합니다.
                 </dd>
-
+              </dl>
+            <dl>
                 <dt>English Odyssey (12단계/총 36권)</dt>
+                <dd class="book04"></dd>
                 <dd>
+
                   기본적인 단어와 숙어 및 문장 구문을 충분히 익힌 중급 이상
                   레벨의 초등학교 학생들을 대상으로 제작된 시리즈입니다.
                   영어 문법 지식을 체계화하는 동시에 수준 높은 언어 구사력을
@@ -172,7 +201,9 @@
 
       </div>
 
-      <div class="p04">
+      <div class="p05">
+        <p class="upper_line"><img src="./img/tit_bl.gif" alt="구분 오렌지 선"></p>
+
         <h2>학사 관리 시스템</h2>
         <dl>
           <dt>월간계획안 (Monthly Lesson Plan)</dt>
