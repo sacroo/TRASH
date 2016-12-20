@@ -21,7 +21,9 @@
 
 
 #container{width:1400px; margin: 0 auto;}
-  #container .main_v_img{width:100%; height:690px; margin: 0 auto; padding-bottom: 40px;position: relative;}
+  #container .main_v_img {width:100%; height:690px; margin: 0 auto; padding-bottom: 40px;position: relative;}
+  #container .main_v_img div a{width:100%; height:690px; background: url('../img/6bf73b5f-29f3-405c-a582-5e0f0cd53298.jpg') no-repeat 0 50%;
+display:block; opacity:0.8; text-indent:-999px; overflow: hidden;}
 
 
     #container .main_v_img .round_btn{width: 600px; height: 14px; position:absolute; left:637px;bottom:20px; }
