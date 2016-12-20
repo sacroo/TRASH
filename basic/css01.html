@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+   <style type="text/css">
+     /*selector{property:value;}*/
+    /*태그 선택자*/
+
+    p {font-size:24px; color:aqua;}
+    ul {list-style:none;} /*주로 리스트 스타일의 불릿을 없애고, 배경이미지로 많이 대체함*/
+    h1 em {background-color:#84d6ee;} /*부모자식 선택자 : 부모 [한칸공백] 자식*/
+    em {background-color:#red;} /*하나의 요소에 여러개의 스타일이 중복 지정될 시에 노드를 가장 상세하게 기술한 스타일이 최종 적용됨*/
+    h2 em, h3 em {background-color:orange;} /*복수 선택자 : 복수의 요소에 스타일 적용시 쉼표[,]로 추가 가능 */
+
+    .text_type01 {font-size:50px;} /*class 선택자 : [.]과 클래스 명으로 표기*/
+    #box01 {width:150px; background-color:#84d6ee;}/*id선택자 : 유일한 공간에 대한 css적용, 유일한 식별자로 사용되며 주로 큰 레이아웃 구성시 div 박스에 부여함*/
+
+    li .text_type01{background-color:pink;}/*인접 선택자 : class 나 id값을 준 태그 중에 하나의 태그를 불러와 선택하는 방법*/
+
+
+    /*background 축약 사용 : body{background:#fff url("img/bg01.jpg") norepeat left top scroll;} 순서 변경 비권장!*/
+
+
+   </style>
+  <title>Document</title>
+</head>
+<body>
+  <!--
+
+  *CSS : 스타일을 주는 언어 / 글자색, 글자 크기, 배경 이미지, 배경색, 레이아웃 설정
+  *TAG : 마크업 / 태그를 코딩하는 것을 의미함
+
+  #인라인 : 태그에 속성, 해당하는 태그만 css를 적용함 / 유지보수의 문제로 사용빈도 매우 낮음.
+  #내부 : 해당 html문서의 head 태그안에 자식으로 css를 적용 / 해딩 문서에만 적용되기 때문에 한 프로젝트 안의 문서마다 각각 작성해야하는 번거로움.
+  #외부 : css파일 포맷을 연결하여 사용
+
+-->
+
+  <p>문단태그</p>
+  <p class="text_type01">문단태그</p>
+
+  <h1 class="text_type01">제목1-제목을 나타내는<em>태그</em></h1>
+  <h2>제목2-제목을 나타내는<em>태그</em></h2>
+  <h3>제목2-제목을 나타내는<em>태그</em></h2>
+
+
+
+
+  <div class="text_type01" id="box01">영역 나눔 태그</div>
+
+  <ul>
+    <li class="text_type01">리스트1</li>
+    <li>리스트2</li>
+    <li>리스트3</li>
+    <li>리스트4</li>
+  </ul>
+
+
+</body>
+</html>
