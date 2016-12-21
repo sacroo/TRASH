@@ -1,0 +1,48 @@
+#wrap{width:100%;}
+
+#inner{width:1240px; margin: 0 auto; position: relative;}
+
+
+#header{width:100%;  height:185px; background: url(../img/bg_header.gif) no-repeat 0 0; background-size:100% 100%; }
+#header .header_up{width: 100%; height: 140px; border-top:2px solid #ff7c98;  position: relative;}
+#header .header_up h1{width: 140px; height: 140px; margin: 0 auto; background: url('../img/logo_baskinrobbins.png') no-repeat 50% 50%;}
+
+/*공통단*/
+#header .header_up .social, #header .header_up .customer{position: absolute; width: 30%;}
+/*a태그 위의 li*/
+#header .header_up .social li, #header .header_up .customer li, #header .header_down ul li, #header .header_down .gnb ul li{display: inline;}
+
+#header .header_up .social li a, #header .header_up .customer li a{display: block; float: left; width:35px; height: 35px; margin-right: 10px; box-sizing: border-box;}
+#header .header_up .social, #header .header_up .customer{ top:50%; margin-top: -17.5px;}
+/*클리어핵*/
+#header .header_u:after, #header .header_up .social:after, #header .header_up .content:after,
+#header .header_down ul:after, #header .header_down .gnb ul:after{content: ''; display: block; height: 0; visibility: hidden; clear: both;}
+
+/*상단 소셜 아이콘단*/
+
+#header .header_up .social {left:0;}
+#header .header_up .social li:nth-child(1) a{background:url('../img/icon_facebook.png') no-repeat 0 0;}
+#header .header_up .social li:nth-child(2) a{background:url('../img/icon_twitter.png') no-repeat 0 0;}
+#header .header_up .social li:nth-child(3) a{background:url('../img/icon_blog.png') no-repeat 0 0;}
+#header .header_up .social li:nth-child(4) a{background:url('../img/icon_instgram.png') no-repeat 0 0;}
+
+#header .header_up .customer {right:0px;}
+#header .header_up .customer li a {font-size: 12px; width: 75px; margin: 5px;}
+#header .header_up .customer li a.search{width:54px; height: 54px; background:url('../img/icon_search.png') no-repeat 0 0; margin-left: 30px; margin-top: -13px;}
+
+#header .header_down{width: 100%; height: 45px; background:#fff; position: relative;;}
+#header .header_down ul{width: 10%; height: 100%; position: absolute; left: 0; top:50%; margin-top: -22.5px;}
+#header .header_down ul a {width: 50%; height: 100%; display: block; float: left; text-align: center; color: #ff7c98; font-size: 13px; font-weight:900;}
+
+
+#header .header_down .gnb{ background:#c3783f; width: 90%; height: 100%; position: absolute; right: 0; top:50%; margin-top: -22.5px;}
+#header .header_down .gnb ul{;}
+#header .header_down .gnb ul li a{display: block; float: left; text-align: center; color: #ff7c98; font-size: 13px; font-weight: 700;}
+
+
+
+
+
+
+#container{width:100%;}
+#footer{}
