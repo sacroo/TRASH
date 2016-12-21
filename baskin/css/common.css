@@ -1,9 +1,9 @@
 #wrap{width:100%;}
 
-#inner{width:1240px; margin: 0 auto; position: relative;}
+.inner{width:1240px; margin: 0 auto; position: relative;}
 
 
-#header{width:100%;  height:185px; background: url(../img/bg_header.gif) no-repeat 0 0; background-size:100% 100%; }
+#header{width:100%;  height:185px; background: url(../img/bg_header.gif) repeat-x 50% 0; background-size:100% 78%; }
 #header .header_up{width: 100%; height: 140px; border-top:2px solid #ff7c98;  position: relative;}
 #header .header_up h1{width: 140px; height: 140px; margin: 0 auto; background: url('../img/logo_baskinrobbins.png') no-repeat 50% 50%;}
 
@@ -15,7 +15,7 @@
 #header .header_up .social li a, #header .header_up .customer li a{display: block; float: left; width:35px; height: 35px; margin-right: 10px; box-sizing: border-box;}
 #header .header_up .social, #header .header_up .customer{ top:50%; margin-top: -17.5px;}
 /*클리어핵*/
-#header .header_u:after, #header .header_up .social:after, #header .header_up .content:after,
+#header .header_up:after, #header .header_up .social:after, #header .header_up .content:after,
 #header .header_down ul:after, #header .header_down .gnb ul:after{content: ''; display: block; height: 0; visibility: hidden; clear: both;}
 
 /*상단 소셜 아이콘단*/
@@ -28,21 +28,44 @@
 
 #header .header_up .customer {right:0px;}
 #header .header_up .customer li a {font-size: 12px; width: 75px; margin: 5px;}
-#header .header_up .customer li a.search{width:54px; height: 54px; background:url('../img/icon_search.png') no-repeat 0 0; margin-left: 30px; margin-top: -13px;}
+#header .header_up .customer li a.search{width:54px; height: 54px;
+  background:url('../img/icon_search.png') no-repeat 0 0; margin-left: 30px;
+  margin-top: -13px;}
 
-#header .header_down{width: 100%; height: 45px; background:#fff; position: relative;;}
-#header .header_down ul{width: 10%; height: 100%; position: absolute; left: 0; top:50%; margin-top: -22.5px;}
-#header .header_down ul a {width: 50%; height: 100%; display: block; float: left; text-align: center; color: #ff7c98; font-size: 13px; font-weight:900;}
+#header .header_down{width: 100%; height: 45px; margin: 0 auto;
+  background:#fff; position: relative;color: }
 
-
-#header .header_down .gnb{ background:#c3783f; width: 90%; height: 100%; position: absolute; right: 0; top:50%; margin-top: -22.5px;}
-#header .header_down .gnb ul{;}
-#header .header_down .gnb ul li a{display: block; float: left; text-align: center; color: #ff7c98; font-size: 13px; font-weight: 700;}
-
-
-
-
+#header .header_down .login { width: 25%; height: 45px; position: absolute;
+  left: 0; top:0; }
+#header .header_down .login a {width: 50%; height: 45px; display: block;
+  float: left; text-align: center; color: #ff7c98; font-size: 13px;
+  padding-top:15px; font-weight:900;}
 
 
-#container{width:100%;}
+#header .header_down .gnb{ width: 75%; height: 45px; position: absolute; right: 0; }
+#header .header_down .gnb ul{width: 100%; height: 100%; position: absolute; right: 0; margin-right:-300px; }
+#header .header_down .gnb ul li a{ padding-top:15px; width:10%; height:45px;margin-left: 5%; display: block; float: left; color: #ff7c98; font-size: 13px; font-weight: 700;}
+#header .header_down .gnb ul li:nth-child(1) a{width: 20%;}
+
+
+
+
+
+#container{width:1600px;}
+#container p{width:100%; height:150px;}
+#container p a{width:100%; height:150px; }
+/*#container p a img{width:100% ; height:150px;background: red;}*/
+
+#container .main_v_img{width:100%; height:700px; margin:10px; background: red;}
+#container .main_v_img .big_img {width:100%; height:697px;}
+/*#container .main_v_img .big_img li{display: inline;}
+#container .main_v_img .big_img li a{display: block;width:100%; height:697px;}
+#container .main_v_img .big_img li:nth-child(1) a{background:url('../img/1452565859.jpg') no-repeat 50% 0 ;}
+#container .main_v_img .big_img li:nth-child(2) a{background:url('../img/') no-repeat 50% 0 ;}
+#container .main_v_img .big_img li:nth-child(3) a{background:url('../img/') no-repeat 50% 0 ;}
+#container .main_v_img .big_img li:nth-child(4) a{background:url('../img/') no-repeat 50% 0 ;}*/
+
+
+
+
 #footer{}
