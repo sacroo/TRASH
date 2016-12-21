@@ -33,7 +33,7 @@
   margin-top: -13px;}
 
 #header .header_down{width: 100%; height: 45px; margin: 0 auto;
-  background:#fff; position: relative;color: }
+  background:#fff; position: relative; border-bottom: 1px solid #59381E;}
 
 #header .header_down .login { width: 25%; height: 45px; position: absolute;
   left: 0; top:0; }
@@ -44,26 +44,27 @@
 
 #header .header_down .gnb{ width: 75%; height: 45px; position: absolute; right: 0; }
 #header .header_down .gnb ul{width: 100%; height: 100%; position: absolute; right: 0; margin-right:-300px; }
-#header .header_down .gnb ul li a{ padding-top:15px; width:10%; height:45px;margin-left: 5%; display: block; float: left; color: #ff7c98; font-size: 13px; font-weight: 700;}
+#header .header_down .gnb ul li a{ padding-top:15px; width:10%; height:45px;margin-left: 5%; display: block;
+   float: left; color: #59381E; font-size: 13px; font-weight: 700;}
 #header .header_down .gnb ul li:nth-child(1) a{width: 20%;}
 
 
 
 
 
-#container{width:1600px;}
+#container{width:100%;}
 #container p{width:100%; height:150px;}
 #container p a{width:100%; height:150px; }
-/*#container p a img{width:100% ; height:150px;background: red;}*/
+#container p a img{width:100% ; height:150px;}
 
-#container .main_v_img{width:100%; height:700px; margin:10px; background: red;}
-#container .main_v_img .big_img {width:100%; height:697px;}
-/*#container .main_v_img .big_img li{display: inline;}
+#container .main_v_img{width:100%; height:854px; margin-top:2px; background: red;}
+#container .main_v_img .big_img {width:100%; height:854px;}
+#container .main_v_img .big_img li{display: inline;}
 #container .main_v_img .big_img li a{display: block;width:100%; height:697px;}
 #container .main_v_img .big_img li:nth-child(1) a{background:url('../img/1452565859.jpg') no-repeat 50% 0 ;}
 #container .main_v_img .big_img li:nth-child(2) a{background:url('../img/') no-repeat 50% 0 ;}
 #container .main_v_img .big_img li:nth-child(3) a{background:url('../img/') no-repeat 50% 0 ;}
-#container .main_v_img .big_img li:nth-child(4) a{background:url('../img/') no-repeat 50% 0 ;}*/
+#container .main_v_img .big_img li:nth-child(4) a{background:url('../img/') no-repeat 50% 0 ;}
 
 
 
