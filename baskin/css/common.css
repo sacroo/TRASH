@@ -57,16 +57,68 @@
 #container p a{width:100%; height:150px; }
 #container p a img{width:100% ; height:150px;}
 
-#container .main_v_img{width:100%; height:854px; margin-top:2px; background: red;}
-#container .main_v_img .big_img {width:100%; height:854px;}
+#container .main_v_img{width:100%; height:697px; margin-top:2px; background: red;position: relative;}
+#container .main_v_img .big_img {width:100%; height:697px;overflow: hidden;}
 #container .main_v_img .big_img li{display: inline;}
 #container .main_v_img .big_img li a{display: block;width:100%; height:697px;}
-#container .main_v_img .big_img li:nth-child(1) a{background:url('../img/1452565859.jpg') no-repeat 50% 0 ;}
-#container .main_v_img .big_img li:nth-child(2) a{background:url('../img/') no-repeat 50% 0 ;}
-#container .main_v_img .big_img li:nth-child(3) a{background:url('../img/') no-repeat 50% 0 ;}
-#container .main_v_img .big_img li:nth-child(4) a{background:url('../img/') no-repeat 50% 0 ;}
+#container .main_v_img .big_img li:nth-child(1) a{background:url('../img/1489299594.jpg') no-repeat 50% 0 ;}
+#container .main_v_img .big_img li:nth-child(2) a{background:url('../img/1452565726.png') no-repeat 50% 0 ;}
+#container .main_v_img .big_img li:nth-child(3) a{background:url('../img/1452569755.jpg') no-repeat 50% 0 ;}
+#container .main_v_img .big_img li:nth-child(4) a{background:url('../img/1468314067.jpg') no-repeat 50% 0 ;}
+
+
+#container .main_v_img .arrow_btn{width: 100%; height:109px; position: absolute; top:50%; margin-top: -54px;}
+#container .main_v_img .arrow_btn li{display: inline;}
+#container .main_v_img .arrow_btn li:nth-child(1) a{background:url('../img/btn_banner_next.png') no-repeat 0 0 ;
+  display: block; width:109px; height:109px; float:right;}
+#container .main_v_img .arrow_btn li:nth-child(2) a{background:url('../img/btn_banner_prev.png') no-repeat 0 0 ;
+  display: block; width:109px; height:109px; float:left;}
+#container .main_v_img .arrow_btn:after{content: ''; display: block; height: 0; visibility: hidden; clear: both;}
+
+#container .main_v_img .rolling_btn{width: 150px; height:10px; }
+#container .main_v_img .rolling_btn li{display: inline;}
+#container .main_v_img .rolling_btn a{display: block; margin:0 2px 0 2px;width:10px; height:10px; float: left; border-radius:5px; background: #fff; position: absolute; bottom:20px; left: 50%;}
+#container .main_v_img .rolling_btn:after{content: ''; display: block; height: 0; visibility: hidden; clear: both;}
+
+
+
+#container .event{width: 100%;}
+#container h2{width:1200px;  margin:0 auto; text-align: center; font-weight: 900; font-size: 18px; padding: 100px 0 100px 0;}
+#container .event .event_banner{width: 1200px; height: 465px; margin: 0 auto; overflow: hidden;}
+
+/*콘테이너단 공통 클리어 핵*/
+#container .event .event_banner:after, #container .event .rolling_btn:after{content: ''; display: block; height: 0; visibility: hidden; clear: both;}
+
+#container .event .event_banner li{float: left; margin: 5px;}
+#container .event .event_banner li dl{;}
+#container .event .event_banner li dl dt{;}
+#container .event .event_banner li dl dd.store{width: 114px; height: 22px; margin: 15px 0 0 0; background: url('../img/stit_store.gif') no-repeat 0 0;}
+#container .event .event_banner li dl dd {padding: 10px 0 0 10px;}
+
+
+#container .event .rolling_btn{width: 200px; height:100px; margin: 0 auto;}
+#container .event .rolling_btn li{display: inline}
+#container .event .rolling_btn li a {display:block; width: 10px; height:10px; background: #e7e7e7; border-radius:5px; float: left; margin: 10px;}
+#container .event .rolling_btn li a:hover{background: #000; width: 15px; height: 15px; border-radius:7.5px;}
 
 
 
 
-#footer{}
+#container .menu{width: 100%; height: 1065px;background: url(../img/bg_menu.jpg) no-repeat 50% 0;}
+#container .menu .menu_wrap{width: 100%; height: 1065px; background: url(../img/img_menu_list.png) no-repeat 50% 0; position: absolute;}
+#container .menu .menu_wrap .menulink_ice_cream{width: 395px; height: 302px; position: absolute; top: 78px; left: 415px;}
+#container .menu .menu_wrap .menulink_ice_cake{width: 276px; height: 472px; position: absolute; top: 78px; left: 848px;}
+#container .menu .menu_wrap .menulink_baverage{width: 230px; height: 366px; position: absolute; top: 418px; left: 213px;}
+#container .menu .menu_wrap .menulink_coffe{width: 329px; height: 292px; position: absolute; top:418px; left:481px; }
+#container .menu .menu_wrap .menulink_dessert{width: 329px; height: 177px; position: absolute; top:749px; left:481px; }
+#container .menu .menu_wrap .menulink_gift{width: 276px; height: 183px; position: absolute; top:588px; left:849px; }
+
+
+#container .offline_store{width: 100%; height: auto;}
+#container .offline_store div{float:left; width: 100%; height: 260px;}
+#container .offline_store div:nth-child(1){background:url(../img/img_store.jpg) no-repeat 0 0;}
+#container .offline_store div:nth-child(2){background:url(../img/img_happyorder_delivery.jpg) no-repeat 0 0;}
+
+#container .offline_store:after{content: ''; display: block; height: 0; visibility: hidden; clear: both;}
+
+#footer{width: 100%; height: 400px; background: red;}
