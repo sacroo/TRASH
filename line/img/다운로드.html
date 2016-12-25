@@ -1,0 +1,2745 @@
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>LINE FRIENDS Corporation</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="stylesheet" type="text/css" href="/css/line_friends.css">
+<link rel="stylesheet" type="text/css" href="/css/line_friends_foreign.css">
+<link rel="stylesheet" type="text/css" href="/css/web_font.css">
+<script src="/js/jquery.js"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-50391448-5', 'auto');
+  ga('send', 'pageview');
+</script>
+
+<style>
+#background_cycler{padding:0;margin:0;width:100%;position:absolute;top:0;left:0;z-index:-1}
+#background_cycler img{position:absolute;left:0;top:0;width:100%;z-index:1}
+#background_cycler img.active{z-index:3}
+
+#background_cycler2{padding:0;margin:0;width:100%;position:absolute;top:0;left:0;z-index:-1}
+#background_cycler2 img{position:absolute;left:0;top:0;width:100%;z-index:1}
+#background_cycler2 img.active{z-index:3}
+</style>
+<script>
+var scrollMove = function (el) {
+	location.href="/"+el;
+}
+</script>
+<link rel="shortcut icon" href="/img/linefriends_favicon.ico">
+<link href="/img/apple_icon57x57.png" rel="apple-touch-icon" />
+<link href="/img/apple_icon76x76.png" rel="apple-touch-icon" sizes="76x76" />
+<link href="/img/apple_icon120x120.png" rel="apple-touch-icon" sizes="120x120" />
+<link href="/img/apple_icon152x152.png" rel="apple-touch-icon" sizes="152x152" />
+<link href="/img/apple_icon180x180.png" rel="apple-touch-icon" sizes="180x180" />
+<link href="/img/icon192x192.png" rel="icon" sizes="192x192" />
+<link href="/img/icon128x128.png" rel="icon" sizes="128x128" />
+</head>
+<body>
+<!-- Google Tag Manager --> 
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-TB5PM2"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TB5PM2');</script>
+<!-- End Google Tag Manager -->
+<!-- wrap -->
+<div id="wrap">
+	<!-- header -->
+	<!--[D]마우스 내릴경우 class fix 추가 -->
+	<div id="header">
+		<div class="hd">	
+		<h1 class="logo"><a href="/"><span class="blind">LINE FRIENDS</span></a></h1>
+		<ul class="navi">
+		<li><a href="javascript:scrollMove('#business');">BUSINESS<!--BUSINESS--></a></li>
+		<li><a href="javascript:scrollMove('#store');">STORE<!--STORE--></a></li>
+		<li><a href="javascript:scrollMove('#gallery');">GALLERY<!--GALLERY--></a></li>
+		<li><a href="javascript:scrollMove('#character');">ABOUT<!--CHARACTER--></a></li>
+		<li><a href="http://store.linefriends.com" target="_blank">ONLINE STORE<!--ONLINE STORE--></a></li>
+		</ul>
+		<!--[D]클래스 opn 추가시 드랍박스 노출 -->
+		<div class="select_lang" id="lngSel">
+			<a class="select_opt" onClick="$(this).parent().toggleClass('opn')">한국어</a>
+			<div class="drop_box">
+			<ul>
+				<li><a href="?lang=ko" >한국어</a></li>
+				<li><a href="?lang=en" >ENGLISH</a></li>
+				<li><a href="?lang=jp" >日本語</a></li>
+				<li><a href="?lang=zh_CN" >中文(简体)</a></li> 
+				<li><a href="?lang=zh_TW" >中文(繁體)</a></li>
+			</ul>
+			</div>
+		</div>
+		</div>
+	</div>
+	<!-- //header -->
+	<!-- container -->
+	<div id="container">
+			
+
+
+
+<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+		<!--[D]이미지 변경시 아래 이미지명 변경-->
+		<div class="spot">
+			<div class="bg_dim"></div>
+            <!--[D]배경 이미지-->
+            <div class="spot_bg_img">
+		        
+		           <img src="/content/banner/201606/7c3fed15b5b9483985fe5e90199037cf.jpg"  alt="임시이미지" id="bgImg1"     data-img="0">
+		        
+		           <img src="/content/banner/201606/fc9a0b799d4d4809b5aa43638e90eb41.jpg"  alt="임시이미지" id="bgImg1"  style="display:none"   data-img="1">
+		        
+		           <img src="/content/banner/201606/2535f276f78243dfa2ed62b4801a6d37.jpg"  alt="임시이미지" id="bgImg1"  style="display:none"   data-img="2">
+		        
+            </div>
+			<div class="spot_txt">
+				<p>Asia No.1 Character<!-- Asia No.1 Character --></p>
+				<h2><span class="blind">LINE FRIENDS</span></h2>
+			</div>
+			<ul class="move_spot">
+			<li><a  onClick="cycleImages.next();" style="cursor:pointer" class="next"><span class="blind">next</span></a></li>
+			<li><a  onClick="cycleImages.prev();" style="cursor:pointer" class="prev"><span class="blind">prev</span></a></li>
+			</ul>
+			
+			<div class="page">
+			<ul>
+			<li><a class="on" id="img0" onClick="cycleImages.choose(0);" style="cursor:pointer" ><span class="blind">1</span></a></li>
+			<li><a id="img1" onClick="cycleImages.choose(1);" style="cursor:pointer" ><span class="blind">2</span></a></li>
+			<li><a id="img2" onClick="cycleImages.choose(2);" style="cursor:pointer" ><span class="blind">3</span></a></li>
+			<!--  <li><a href="#" id="img3"><span class="blind">4</span></a></li> -->
+			</ul>
+			</div>
+		</div>
+		
+		<!-- content -->
+		<div id="content">
+			<div class="section" id="business">
+				<div class="sec_img"></div>
+				<h2>BUSINESS<!-- BUSINESS -->   </h2>
+				<ul class="sec_list">
+ 
+				<li class="first">
+				<div class="thumb"><img src="/img/img_sec_icon.gif" alt="Store"></div>
+				<dl>
+				<dt>STORE</dt>
+				<dd>도쿄, 뉴욕, 홍콩 등 라인프렌즈 스토어가 전세계의 가 장 트렌디한 도시들을 찾아갑니다. 다양한 캐릭터 제품들과 깜찍한 먹거리들로 가득한 라인프렌즈 스토어는 도심속 테마파크에 온 듯한 즐거운 경험을 제공합니다.</dd>
+				</dl>
+				</li>
+				<li>
+				<div class="thumb"><img src="/img/img_sec_icon2.gif" alt="Café"></div>
+				<dl>
+				<dt>Café</dt>
+				<dd>라인프렌즈의 인기 캐릭터들을 재현한 기발하고 귀여운 디저트들을 만나보세요. 마카롱, 비스킷, 초콜릿, 커피 등 좋은 재료로 만든 F&B 메뉴들이 여러분을 기다립니다.</dd>
+				</dl>
+				</li>
+				<li>
+				<div class="thumb"><img src="/img/img_sec_icon3.gif" alt="Collaboration"></div>
+				<dl>
+				<dt>Collaboration</dt>
+				<dd>라인프렌즈는 세계적인 브랜드들과 손잡고 진정성 있는 제품들을 선보입니다. 라인프렌즈는 최고의 제품을 향한 신념과 고집으로 한 길을 걸어오는 세상의 브랜드들을 응원합니다.</dd>
+				</dl>
+				</li>
+				<li class="first">
+				<div class="thumb"><img src="/img/img_sec_icon4.gif" alt="Character Goods"></div>
+				<dl>
+				<dt>Character Goods<!-- Character Goods --></dt>
+				<dd>라인프렌즈는 생활에서 충분한 가치를 가지는 캐릭터 제품을 만들기 위해 고민합니다. 간단한 문구류부터 리빙, 여행에 이르기까지, 귀여운 디자인에 실용성과 품질까지 고려한 5000가지 라인프렌즈 제품들을 만나보세요.</dd>
+				</dl>
+				</li>
+				<li>
+				<div class="thumb"><img src="/img/img_sec_icon5.gif" alt="Licensing"></div>
+				<dl>
+				<dt>Licensing<!--Licensing--></dt>
+				<dd>라인프렌즈는 다양한 분야에서 최고를 달리는 전세계 파트너들과 라이선싱 비즈니스를 전개합니다. 서로의 역량과 가능성이 만나게 되는 라이선스 비즈니스를 통해 소비자와의 접점을 확대하고, 라인프렌즈의 브랜드 경쟁력을 강화합니다.</dd>
+				</dl>
+				</li>
+				<li>
+				<div class="thumb"><img src="/img/img_sec_icon6.gif" alt="Contents"></div>
+				<dl>
+				<dt>Contents<!-- Contents--></dt>
+				<dd>글로벌 캐릭터 브랜드 라인프렌즈는 그 동안의 노하우와 경쟁력을 바탕으로 애니메이션, 영화, 게임, 교육, 출판 등 전세계 사람들이 함께 공감하고 즐길 수 있는 다양한 장르의 콘텐츠를 선보입니다.</dd>
+				</dl>
+				</li>
+				</ul>
+				
+				<ul class="btn_area">
+				<li><a href="partnership.do"><span>제휴 제안</span></a></li>
+				
+                
+                
+                
+                
+                
+				</ul>
+				
+			</div>
+			<!--//section-->
+			
+			<div class="section2" id="store">
+				<div class="map_area">
+					<div class="img_map"></div>
+					<div class="sec2_tit">
+					<h2>STORE<!--STORE--></h2>
+					<p>45 STORES WORLDWIDE<!-- 47 STORE IN WORLD WIDE --> </p>
+					</div>
+				</div>
+				
+				<div class="sec2_list">
+                    <div class="zone_list first">
+                
+                
+                
+                
+                
+                
+                    
+			    
+			         
+                              
+			         <h3 class="">KOREA</h3>
+			         
+			         
+			         
+			         
+			         
+			         
+			         
+			         
+                     
+                     
+			         
+			        
+			         
+			         
+			         
+			         
+			         
+			    
+			         
+			         
+			         
+			         
+				              
+                     <strong class="" >STORE & CAFE</strong>
+                     
+                     
+                     
+                     <ul>
+                     
+                     
+                     
+			         
+			        
+			         
+			         
+			         
+			         
+			         
+			    
+			         
+			         
+			         
+			         
+                     
+                     
+			         
+			             
+			             
+			                 <li><a href="http://map.naver.com/?dlevel=12&pinType=site&pinId=37260636&x=126.9961625&y=37.5344752&enc=b64" target="_blank"><em>서울 이태원 스토어</em></a></li>
+			             
+			             
+			             
+			             
+			             
+			             
+			         
+			        
+			         
+			         
+			         
+			         
+			         
+			    
+			         
+			         
+			         
+			         
+                     
+                     
+			         
+			             
+			             
+			                 <li><a href="http://map.naver.com/?dlevel=12&pinType=site&pinId=36369636&x=127.0228720&y=37.5198744&enc=b64" target="_blank"><em>서울 가로수길 스토어</em></a></li>
+			             
+			             
+			             
+			             
+			             
+			             
+			         
+			        
+			         
+			         
+			         
+			         
+			         
+			    
+			         
+			         
+			         
+			         
+                     
+                     
+			         
+			             
+			             
+			                 <li><a href="http://map.naver.com/?dlevel=12&pinType=site&pinId=37027463&x=127.1124790&y=37.3924582&enc=b64" target="_blank"><em>성남 판교 현대백화점</em></a></li>
+			             
+			             
+			             
+			             
+			             
+			             
+			         
+			        
+			         
+			         
+			         
+			         
+			         
+			    
+			         
+			         
+			         
+			         
+                     
+                     
+			         
+			             
+			             
+			                 <li><a href="http://map.naver.com/?dlevel=12&pinType=site&pinId=37006020&x=129.0361375&y=35.0979746&enc=b64" target="_blank"><em>부산 광복 롯데 백화점</em></a></li>
+			             
+			             
+			             
+			             
+			             
+			             
+			         
+			        
+			         
+			         
+			         
+			         
+			         
+			    
+			         
+			         
+			         
+			         
+                     
+                     
+			         
+			             
+			             
+			                 <li><a href="http://map.naver.com/?dlevel=12&pinType=site&pinId=38278817&x=126.6977982&y=37.7696128&enc=b64" target="_blank"><em>파주 프리미엄 아울렛점</em></a></li>
+			             
+			             
+			             
+			             
+			             
+			             
+			         
+			        
+			         
+			         
+			         
+			         
+			         
+			    
+			         
+			         
+			         
+			         
+				         
+				             </ul>
+				              
+                     <strong class="tit_v2" >STORE</strong>
+                     
+                     
+                     
+                     <ul>
+                     
+                     
+                     
+			         
+			        
+			         
+			         
+			         
+			         
+			         
+			    
+			         
+			         
+			         
+			         
+                     
+                     
+			         
+			             
+			             
+			                 <li><a href="http://map.naver.com/?dlevel=12&pinType=site&pinId=34842844&x=126.9816196&y=37.5636783&enc=b64" target="_blank"><em>서울 명동 롯데백화점 영플라자</em></a></li>
+			             
+			             
+			             
+			             
+			             
+			             
+			         
+			        
+			         
+			         
+			         
+			         
+			         
+			    
+			         
+			         
+			         
+			         
+                     
+                     
+			         
+			             
+			             
+			                 <li><a href="http://map.naver.com/?dlevel=12&pinType=site&pinId=37394679&x=126.9843628&y=37.5614056&enc=b64" target="_blank"><em>서울 명동역 스토어</em></a></li>
+			             
+			             
+			             
+			             
+			             
+			             
+			         
+			        
+			         
+			         
+			         
+			         
+			         
+			    
+			         
+			         
+			         
+			         
+                     
+                     
+			         
+			             
+			             
+			                 <li><a href="http://map.naver.com/?dlevel=12&pinType=site&pinId=37892071&x=126.9803188&y=37.5601973&enc=b64" target="_blank"><em>서울 명동 신세계 면세점</em></a></li>
+			             
+			             
+			             
+			             
+			             
+			             
+			         
+			        
+			         
+			         
+			         
+			         
+			         
+			    
+			         
+			         
+			         
+			         
+                     
+                     
+			         
+			             
+			             
+			                 <li><a href="http://map.naver.com/?dlevel=12&pinType=site&pinId=37027006&x=126.9359624&y=37.5557503&enc=b64" target="_blank"><em>서울 신촌 현대백화점</em></a></li>
+			             
+			             
+			             
+			             
+			             
+			             
+			         
+			        
+			         
+			         
+			         
+			         
+			         
+			    
+			         
+			         
+			         
+			         
+                     
+                     
+			         
+			             
+			             
+			                 <li><a href="http://map.naver.com/?dlevel=12&pinType=site&pinId=36782644&x=127.0089232&y=37.5688652&enc=b64" target="_blank"><em>서울 동대문 두타</em></a></li>
+			             
+			             
+			             
+			             
+			             
+			             
+			         
+			        
+			         
+			         
+			         
+			         
+			         
+			    
+			         
+			         
+			         
+			         
+                     
+                     
+			         
+			             
+			             
+			                 <li><a href="http://map.naver.com/?dlevel=12&pinType=site&pinId=37684575&x=126.9222597&y=37.5547528&enc=b64" target="_blank"><em>서울 홍대 엘큐브</em></a></li>
+			             
+			             
+			             
+			             
+			             
+			             
+			         
+			        
+			         
+			         
+			         
+			         
+			         
+			    
+			         
+			         
+			         
+			         
+                     
+                     
+			         
+			             
+			             
+			                 <li><a href="http://map.naver.com/?dlevel=12&pinType=site&pinId=36225407&x=127.2025986&y=37.2941766&enc=b64" target="_blank"><em>용인 에버랜드</em></a></li>
+			             
+			             
+			             
+			             
+			             
+			             
+			         
+			        
+			         
+			         
+			         
+			         
+			         
+			    
+			         
+			         
+			         
+			         
+                     
+                     
+			         
+			             
+			             
+			                 <li><a href="http://map.naver.com/?pinId=50117888&pinType=site&dlevel=12&y=54d91cc7d2b6b1edb69db798b16017e1&x=a76620394bc315a95ee01ad7e43e4449&enc=b64" target="_blank"><em>서울 이대 엘큐브</em></a></li>
+			             
+			             
+			             
+			             
+			             
+			             
+			         
+			        
+			         
+			         
+			         
+			         
+			         
+			    
+			         
+			         
+			         
+			         
+                     
+                     
+			         
+			        
+			         
+			             
+                             </ul>
+                         
+                         
+                         
+                         
+    			         <ul>
+			         
+			         
+			         
+			         
+			         
+			    
+			         
+			         
+			         
+			         
+                     
+                     
+			         
+			             
+			             
+			             
+			                 <li class="list_v2"><span>서울 명동 롯데백화점 영플라자 팝업 스토어</span></li>
+			             
+			             
+			             
+			             
+			             
+			         
+			        
+			         
+			         
+			         
+			         
+			         
+			    
+			         
+			         
+			         
+			         
+                     
+                     
+			         
+			             
+			             
+			             
+			                 <li class=""><span>서울 잠실 롯데백화점 팝업 스토어</span></li>
+			             
+			             
+			             
+			             
+			             
+			         
+			        
+			         
+			         
+			         
+			         
+			         
+			    
+			         
+			         
+			         
+			         
+                     
+                     
+			         
+			             
+			             
+			             
+			                 <li class=""><span>제주 면세점 팝업 스토어</span></li>
+			             
+			             
+			             
+			             
+			             
+			         
+			        
+			         
+			         
+			         
+			         
+			         
+			    
+			         
+			         
+			         
+			         
+                     
+                     
+			         
+			             
+			             
+			             
+			                 <li class=""><span>서울 신촌 현대백화점 유플렉스 팝업 스토어</span></li>
+			             
+			             
+			             
+			             
+			             
+			         
+			        
+			         
+			         
+			         
+			         
+			         
+			    
+			         
+			         
+			         
+			         
+                     
+                     
+			         
+			             
+			             
+			             
+			                 <li class=""><span>서울 영등포 타임스퀘어 유플렉스</span></li>
+			             
+			             
+			             
+			             
+			             
+			         
+			        
+			         
+			         
+			         
+			         
+			         
+			    
+			         
+			         
+			         
+			         
+                     
+                     
+			         
+			             
+			             
+			             
+			                 <li class=""><span>서울 홍대 윈더 플레이스</span></li>
+			             
+			             
+			             
+			             
+			             
+			         
+			        
+			         
+			         
+			         
+			         
+			         
+			    
+			         
+			         
+			         
+			         
+                     
+                     
+			         
+			        
+			         
+			         
+			         
+			         
+			               </ul>
+				          </div>
+				        <div class="zone_list v1">
+				        
+				        
+				        
+				        
+			         
+			         
+			    
+			         
+                              
+			         <h3 class="">CHINA</h3>
+			         
+			         
+			         
+			         
+			         
+			         
+			         
+			         
+                     
+                     
+			         
+			        
+			         
+			         
+			         
+			         
+			         
+			    
+			         
+			         
+			         
+			         
+				              
+                     <strong class="" >STORE & CAFE</strong>
+                     
+                     
+                     
+                     <ul>
+                     
+                     
+                     
+			         
+			        
+			         
+			         
+			         
+			         
+			         
+			    
+			         
+			         
+			         
+			         
+                     
+                     
+			         
+			             
+			             
+			                 <li><a href="http://j.map.baidu.com/3rVAH" target="_blank"><em>상해 화이하이점</em></a></li>
+			             
+			             
+			             
+			             
+			             
+			             
+			         
+			        
+			         
+			         
+			         
+			         
+			         
+			    
+			         
+			         
+			         
+			         
+                     
+                     
+			         
+			             
+			             
+			                 <li><a href="http://j.map.baidu.com/N_AKF" target="_blank"><em>난징 캐서린파크점</em></a></li>
+			             
+			             
+			             
+			             
+			             
+			             
+			         
+			        
+			         
+			         
+			         
+			         
+			         
+			    
+			         
+			         
+			         
+			         
+                     
+                     
+			         
+			             
+			             
+			                 <li><a href="http://j.map.baidu.com/OuUAH" target="_blank"><em>광저우 정지아광장점</em></a></li>
+			             
+			             
+			             
+			             
+			             
+			             
+			         
+			        
+			         
+			         
+			         
+			         
+			         
+			    
+			         
+			         
+			         
+			         
+                     
+                     
+			         
+			             
+			             
+			                 <li><a href="http://map.baidu.com/?newmap=1&shareurl=1&l=19&tn=B_NORMAL_MAP&hb=B_SATELLITE_STREET&c=12964957,4825655&s=s%26da_src%3DsearchBox.button%26wd%3D%E5%8C%97%E4%BA%AC%E5%B8%82%E6%9C%9D%E9%98%B3%E5%8C%BA%E5%BB%BA%E5%9B%BD%E9%97%A8%E5%A4%96%E5%A4%A7%E8%A1%972%E5%8F%B7(%E8%BF%91%E5%9B%BD%E8%B4%B8%E5%9C%B0%E9%93%81%E7%AB%99C%E5%8F%A3)%26c%3D131%26src%3D0%26wd2%3D%26sug%3D0%26l%3D14%26from%3Dwebmap%26biz_forward%3D%7B%22scaler%22%3A1%2C%22styles%22%3A%22pl%22%7D%26sug_forward%3D" target="_blank"><em>북경 궈마오 인타이센터</em></a></li>
+			             
+			             
+			             
+			             
+			             
+			             
+			         
+			        
+			         
+			         
+			         
+			         
+			         
+			    
+			         
+			         
+			         
+			         
+                     
+                     
+			         
+			             
+			             
+			                 <li><a href="http://j.map.baidu.com/MjVrs" target="_blank"><em>청두 Sino-Ocean 타이쿠리</em></a></li>
+			             
+			             
+			             
+			             
+			             
+			             
+			         
+			        
+			         
+			         
+			         
+			         
+			         
+			    
+			         
+			         
+			         
+			         
+                     
+                     
+			         
+			             
+			             
+			                 <li><a href="http://j.map.baidu.com/cdVAH" target="_blank"><em>상해 신천지 소호광장</em></a></li>
+			             
+			             
+			             
+			             
+			             
+			             
+			         
+			        
+			         
+			         
+			         
+			         
+			         
+			    
+			         
+			         
+			         
+			         
+				         
+				             </ul>
+				              
+                     <strong class="tit_v2" >STORE</strong>
+                     
+                     
+                     
+                     <ul>
+                     
+                     
+                     
+			         
+			        
+			         
+			         
+			         
+			         
+			         
+			    
+			         
+			         
+			         
+			         
+                     
+                     
+			         
+			             
+			             
+			                 <li><a href="https://goo.gl/maps/Lbu1i7NMVYt" target="_blank"><em>홍콩 하이산 플레이스점</em></a></li>
+			             
+			             
+			             
+			             
+			             
+			             
+			         
+			        
+			         
+			         
+			         
+			         
+			         
+			    
+			         
+			         
+			         
+			         
+                     
+                     
+			         
+			             
+			             
+			                 <li><a href="https://goo.gl/maps/scP3R5jRsNA2" target="_blank"><em>홍콩 랭햄 플레이스</em></a></li>
+			             
+			             
+			             
+			             
+			             
+			             
+			         
+			        
+			         
+			         
+			         
+			         
+			         
+			    
+			         
+			         
+			         
+			         
+                     
+                     
+			         
+			        
+			         
+			             
+                             </ul>
+                         
+                         
+                         
+                         
+    			         <ul>
+			         
+			         
+			         
+			         
+			         
+			    
+			         
+			         
+			         
+			         
+                     
+                     
+			         
+			             
+			             
+			             
+			                 <li class="list_v2"><span>상해 조이시티</span></li>
+			             
+			             
+			             
+			             
+			             
+			         
+			        
+			         
+			         
+			         
+			         
+			         
+			    
+			         
+			         
+			         
+			         
+                     
+                     
+			         
+			             
+			             
+			             
+			                 <li class=""><span>북경 왕푸징 인타이센터</span></li>
+			             
+			             
+			             
+			             
+			             
+			         
+			        
+			         
+			         
+			         
+			         
+			         
+			    
+			         
+			         
+			         
+			         
+                     
+                     
+			         
+			             
+			             
+			             
+			                 <li class=""><span>대련 올림피아66 팝업 스토어</span></li>
+			             
+			             
+			             
+			             
+			             
+			         
+			        
+			         
+			         
+			         
+			         
+			         
+			    
+			         
+			         
+			         
+			         
+                     
+                     
+			         
+			             
+			             
+			             
+			                 <li class=""><span>상해 K11 팝업 스토어</span></li>
+			             
+			             
+			             
+			             
+			             
+			         
+			        
+			         
+			         
+			         
+			         
+			         
+			    
+			         
+			         
+			         
+			         
+                     
+                     
+			         
+			             
+			             
+			             
+			                 <li class=""><span>북경 산리툰 타이쿠리 팝업 스토어</span></li>
+			             
+			             
+			             
+			             
+			             
+			         
+			        
+			         
+			         
+			         
+			         
+			         
+			    
+			         
+			         
+			         
+			         
+                     
+                     
+			         
+			             
+			             
+			             
+			                 <li class=""><span>북경 궈마오 인타이센터 팝업 스토어</span></li>
+			             
+			             
+			             
+			             
+			             
+			         
+			        
+			         
+			         
+			         
+			         
+			         
+			    
+			         
+			         
+			         
+			         
+                     
+                     
+			         
+			             
+			             
+			             
+			                 <li class=""><span>항주 Hubin Icerink 팝업 스토어</span></li>
+			             
+			             
+			             
+			             
+			             
+			         
+			        
+			         
+			         
+			         
+			         
+			         
+			    
+			         
+			         
+			         
+			         
+                     
+                     
+			         
+			             
+			             
+			             
+			                 <li class=""><span>성도 타이쿠리 팝업 스토어</span></li>
+			             
+			             
+			             
+			             
+			             
+			         
+			        
+			         
+			         
+			         
+			         
+			         
+			    
+			         
+			         
+			         
+			         
+                     
+                     
+			         
+			             
+			             
+			             
+			                 <li class=""><span>홍콩랭햄플레이스 팝업 스토어</span></li>
+			             
+			             
+			             
+			             
+			             
+			         
+			        
+			         
+			         
+			         
+			         
+			         
+			    
+			         
+			         
+			         
+			         
+                     
+                     
+			         
+			             
+			             
+			             
+			                 <li class=""><span>홍콩오션파크 팝업 스토어</span></li>
+			             
+			             
+			             
+			             
+			             
+			         
+			        
+			         
+			         
+			         
+			         
+			         
+			    
+			         
+			         
+			         
+			         
+                     
+                     
+			         
+			        
+			         
+			         
+			         
+			         
+			               </ul>
+				          </div>
+				        <div class="zone_list v2">
+				        
+				        
+				        
+				        
+			         
+			         
+			    
+			         
+                              
+			         <h3 class="">JAPAN</h3>
+			         
+			         
+			         
+			         
+			         
+			         
+			         
+			         
+                     
+                     
+			         
+			        
+			         
+			         
+			         
+			         
+			         
+			    
+			         
+			         
+			         
+			         
+				              
+                     <strong class="" >STORE & CAFE</strong>
+                     
+                     
+                     
+                     <ul>
+                     
+                     
+                     
+			         
+			        
+			         
+			         
+			         
+			         
+			         
+			    
+			         
+			         
+			         
+			         
+                     
+                     
+			         
+			             
+			             
+			                 <li><a href="https://www.google.co.kr/maps/place/LINE+FRIENDS+STORE+%E4%BB%99%E5%8F%B0/@38.2612847,140.869992,17z/data=!3m1!4b1!4m2!3m1!1s0x5f8a283c84baaaab:0x8fb79855282797ec" target="_blank"><em>센다이 아오바구 이치방쵸</em></a></li>
+			             
+			             
+			             
+			             
+			             
+			             
+			         
+			        
+			         
+			         
+			         
+			         
+			         
+			    
+			         
+			         
+			         
+			         
+                     
+                     
+			         
+			             
+			             
+			                 <li><a href="https://www.google.co.kr/maps/place/LINE+FRIENDS+CAFE+%26+STORE+%E7%A6%8F%E5%B2%A1/@33.5873121,130.3950549,17z/data=!3m1!4b1!4m2!3m1!1s0x35419185ba376a77:0x9deb44a59e668e0e" target="_blank"><em>후쿠오카시 오구 덴진</em></a></li>
+			             
+			             
+			             
+			             
+			             
+			             
+			         
+			        
+			         
+			         
+			         
+			         
+			         
+			    
+			         
+			         
+			         
+			         
+				         
+				             </ul>
+				              
+                     <strong class="tit_v2" >STORE</strong>
+                     
+                     
+                     
+                     <ul>
+                     
+                     
+                     
+			         
+			        
+			         
+			         
+			         
+			         
+			         
+			    
+			         
+			         
+			         
+			         
+                     
+                     
+			         
+			             
+			             
+			                 <li><a href="https://www.google.co.kr/maps/place/LINE+FRIENDS+STORE/@35.6696741,139.7043121,17z/data=!3m1!4b1!4m2!3m1!1s0x60188ca363294bbd:0x3c791b8715b76142" target="_blank"><em>도쿄 하라주쿠 진구마에</em></a></li>
+			             
+			             
+			             
+			             
+			             
+			             
+			         
+			        
+			         
+			         
+			         
+			         
+			         
+			    
+			         
+                         
+                             </ul>
+                              
+			         <h3 class="nation">TAIWAN</h3>
+			         
+			         
+			         
+			         
+			         
+			         
+			         
+			         
+                     
+                     
+			         
+			        
+			         
+			         
+			         
+			         
+			         
+			    
+			         
+			         
+			         
+			         
+				              
+                     <strong class="" >STORE</strong>
+                     
+                     
+                     
+                     <ul>
+                     
+                     
+                     
+			         
+			        
+			         
+			         
+			         
+			         
+			         
+			    
+			         
+			         
+			         
+			         
+                     
+                     
+			         
+			             
+			             
+			                 <li><a href="https://www.google.co.kr/maps/place/LINE+FRIENDS+STORE/@25.0384096,121.5651208,17z/data=!3m1!4b1!4m2!3m1!1s0x3442abba48d3b7f1:0x6ec3b5786805e5c6" target="_blank"><em>타이페이 신이 브리즈 송가오</em></a></li>
+			             
+			             
+			             
+			             
+			             
+			             
+			         
+			        
+			         
+			         
+			         
+			         
+			         
+			    
+			         
+			         
+			         
+			         
+                     
+                     
+			         
+			             
+			             
+			                 <li><a href="" target="_blank"><em>타이페이 타이페이역</em></a></li>
+			             
+			             
+			             
+			             
+			             
+			             
+			         
+			        
+			         
+			         
+			         
+			         
+			         
+			    
+			         
+			         
+			         
+			         
+                     
+                     
+			         
+			        
+			         
+			             
+                             </ul>
+                         
+                         
+                         
+                         
+    			         <ul>
+			         
+			         
+			         
+			         
+			         
+			    
+			         
+			         
+			         
+			         
+                     
+                     
+			         
+			             
+			             
+			             
+			                 <li class="list_v2"><span>타이페이 국립대만과학교육관 테마파크</span></li>
+			             
+			             
+			             
+			             
+			             
+			         
+			        
+			         
+			         
+			         
+			         
+			         
+			    
+			         
+			         
+			         
+			         
+                     
+                     
+			         
+			             
+			             
+			             
+			                 <li class=""><span>타이중 타이중국제회전센터 테마파크</span></li>
+			             
+			             
+			             
+			             
+			             
+			         
+			        
+			         
+			         
+			         
+			         
+			         
+			    
+			         
+			         
+			         
+			         
+                     
+                     
+			         
+			             
+			             
+			             
+			                 <li class=""><span>카오슝 국립과학공예박물관 테마파크</span></li>
+			             
+			             
+			             
+			             
+			             
+			         
+			        
+			         
+			         
+			         
+			         
+			         
+			    
+			         
+			         
+			         
+			         
+                     
+                     
+			         
+			             
+			             
+			             
+			                 <li class=""><span>타이페이 Huashan 1914 팝업 스토어</span></li>
+			             
+			             
+			             
+			             
+			             
+			         
+			        
+			         
+			         
+			         
+			         
+			         
+			    
+			         
+			         
+			         
+			         
+                     
+                     
+			         
+			             
+			             
+			             
+			                 <li class=""><span>타이페이 미츠코시 남서점 팝업 스토어</span></li>
+			             
+			             
+			             
+			             
+			             
+			         
+			        
+			         
+			         
+			         
+			         
+			         
+			    
+			         
+                         
+                             </ul>
+                              
+			         <h3 class="nation">MALAYSIA</h3>
+			         
+			         
+			         
+			         
+			         
+			         
+			         
+			         
+                     
+                     
+			         
+			        
+			         
+			         
+			         
+			         
+			         
+			    
+			         
+			         
+			         
+			         
+                     
+                     
+			         
+			        
+			         
+			             
+                         
+                         
+                         
+    			         <ul>
+			         
+			         
+			         
+			         
+			         
+			    
+			         
+			         
+			         
+			         
+                     
+                     
+			         
+			             
+			             
+			             
+			                 <li class="list_v2"><span>쿠알라룸푸르 파빌리온 팝업 스토어</span></li>
+			             
+			             
+			             
+			             
+			             
+			         
+			        
+			         
+			         
+			         
+			         
+			         
+			    
+			         
+			         
+			         
+			         
+                     
+                     
+			         
+			             
+			             
+			             
+			                 <li class=""><span>푸트라자야 iOi시티몰 팝업 스토어</span></li>
+			             
+			             
+			             
+			             
+			             
+			         
+			        
+			         
+			         
+			         
+			         
+			         
+			    
+			         
+			         
+			         
+			         
+                     
+                     
+			         
+			        
+			         
+			         
+			         
+			         
+			               </ul>
+				          </div>
+				        <div class="zone_list v3">
+				        
+				        
+				        
+				        
+			         
+			         
+			    
+			         
+                              
+			         <h3 class="">INDONESIA</h3>
+			         
+			         
+			         
+			         
+			         
+			         
+			         
+			         
+                     
+                     
+			         
+			        
+			         
+			         
+			         
+			         
+			         
+			    
+			         
+			         
+			         
+			         
+                     
+                     
+			         
+			        
+			         
+			             
+                         
+                         
+                         
+    			         <ul>
+			         
+			         
+			         
+			         
+			         
+			    
+			         
+			         
+			         
+			         
+                     
+                     
+			         
+			             
+			             
+			             
+			                 <li class="list_v2"><span>자카르타 Kelapa Gading 팝업 스토어</span></li>
+			             
+			             
+			             
+			             
+			             
+			         
+			        
+			         
+			         
+			         
+			         
+			         
+			    
+			         
+                         
+                             </ul>
+                              
+			         <h3 class="nation">THAILAND</h3>
+			         
+			         
+			         
+			         
+			         
+			         
+			         
+			         
+                     
+                     
+			         
+			        
+			         
+			         
+			         
+			         
+			         
+			    
+			         
+			         
+			         
+			         
+                     
+                     
+			         
+			        
+			         
+			             
+                         
+                         
+                         
+    			         <ul>
+			         
+			         
+			         
+			         
+			         
+			    
+			         
+			         
+			         
+			         
+                     
+                     
+			         
+			             
+			             
+			             
+			                 <li class="list_v2"><span>방콕 시암센터 팝업 스토어</span></li>
+			             
+			             
+			             
+			             
+			             
+			         
+			        
+			         
+			         
+			         
+			         
+			         
+			    
+			         
+                         
+                             </ul>
+                              
+			         <h3 class="nation">SINGAPORE</h3>
+			         
+			         
+			         
+			         
+			         
+			         
+			         
+			         
+                     
+                     
+			         
+			        
+			         
+			         
+			         
+			         
+			         
+			    
+			         
+			         
+			         
+			         
+                     
+                     
+			         
+			        
+			         
+			             
+                         
+                         
+                         
+    			         <ul>
+			         
+			         
+			         
+			         
+			         
+			    
+			         
+			         
+			         
+			         
+                     
+                     
+			         
+			             
+			             
+			             
+			                 <li class="list_v2"><span>WISMA ATRIA 팝업 스토어</span></li>
+			             
+			             
+			             
+			             
+			             
+			         
+			        
+			         
+			         
+			         
+			         
+			         
+			    
+			         
+			         
+			         
+			         
+                     
+                     
+			         
+			             
+			             
+			             
+			                 <li class=""><span>Somerset 팝업 스토어</span></li>
+			             
+			             
+			             
+			             
+			             
+			         
+			        
+			         
+			         
+			         
+			         
+			         
+			    
+			         
+                         
+                             </ul>
+                              
+			         <h3 class="nation">USA</h3>
+			         
+			         
+			         
+			         
+			         
+			         
+			         
+			         
+                     
+                     
+			         
+			        
+			         
+			         
+			         
+			         
+			         
+			    
+			         
+			         
+			         
+			         
+                     
+                     
+			         
+			        
+			         
+			             
+                         
+                         
+                         
+    			         <ul>
+			         
+			         
+			         
+			         
+			         
+			    
+			         
+			         
+			         
+			         
+                     
+                     
+			         
+			             
+			             
+			             
+			                 <li class="list_v2"><span>뉴욕 타임스퀘어 팝업 스토어</span></li>
+			             
+			             
+			             
+			             
+			             
+			         
+			        
+			         
+			         
+			         
+			         
+			         
+			    
+			         
+                         
+                             </ul>
+                              
+			         <h3 class="nation">COLOMBIA</h3>
+			         
+			         
+			         
+			         
+			         
+			         
+			         
+			         
+                     
+                     
+			         
+			        
+			         
+			         
+			         
+			         
+			         
+			    
+			         
+			         
+			         
+			         
+                     
+                     
+			         
+			        
+			         
+			             
+                         
+                         
+                         
+    			         <ul>
+			         
+			         
+			         
+			         
+			         
+			    
+			         
+			         
+			         
+			         
+                     
+                     
+			         
+			             
+			             
+			             
+			                 <li class="list_v2"><span>산타페데보고타 팝업 스토어</span></li>
+			             
+			             
+			             
+			             
+			             
+			         
+			        
+			         
+			         
+			         
+			         
+			         
+			     	
+			 
+			              </ul>
+                        </div>
+		 
+			
+				
+				
+				  </ul>
+                </div>
+			</div>
+			<!--//section2-->
+			
+			
+			<div class="section3" id="gallery">
+				<div class="image_view">
+                	<div class="sec3_bg_img">
+                		<img src="/content/photo/201606/7a3fda5468fd4dcfb695158188778c8a.jpg" class="active" id="g1" style="z-index:0">
+                		<img src="" id ="g2" style="z-index:0">
+                	</div>
+					<!--[D]배경 화살표-->
+					<ul class="move_sec3">
+					<li><a onClick="gallary.next();" style="cursor:pointer" class="next"><span class="blind">next</span></a></li>
+					<li><a onClick="gallary.prev();" style="cursor:pointer" class="prev"><span class="blind">prev</span></a></li>
+					</ul>
+					<h3 class="img_tit">
+					<a href="http://map.naver.com/?dlevel=12&pinType=site&pinId=37260636&x=126.9961625&y=37.5344752&enc=b64" target="_blank">
+					<em id="gallary_title">서울 이태원 스토어</em>
+					</a>
+					</h3>
+					<div class="img_rolling">
+					<!--[D]롤링시 -318의 배수로 이동하시면 됩니다. (5개 롤링)-->
+					<ul id="gallyPagging" style="margin-left:0">
+				
+                    
+                        <li><a  class="on"  onClick="gallary.choose(0);" ><img src="/content/photo/201606/7a3fda5468fd4dcfb695158188778c8a.jpg" width="60" height="40"></a></li>
+                    
+                        <li><a  onClick="gallary.choose(1);" ><img src="/content/photo/201606/6e5e53ac63874319a3e7f67c13a1e96d.jpg" width="60" height="40"></a></li>
+                    
+                        <li><a  onClick="gallary.choose(2);" ><img src="/content/photo/201606/c5ecbd6446bf41619ce6e8ab490ddad7.jpg" width="60" height="40"></a></li>
+                    
+                        <li><a  onClick="gallary.choose(3);" ><img src="/content/photo/201606/23b229b42ba641c2ac3bcc7249a74354.jpg" width="60" height="40"></a></li>
+                    
+                        <li><a  onClick="gallary.choose(4);" ><img src="/content/photo/201606/ef098bd717da4df7a41ac96d889f5dd1.jpg" width="60" height="40"></a></li>
+                    
+					
+					</ul>
+					</div>
+					<!--[D]롤링 화살표-->
+					<ul class="rolling_move">
+					<li><a onClick="gallary.nextPage();" style="cursor:pointer" class="next"><span class="blind">next</span></a></li>
+					<li><a onClick="gallary.prevPage();" style="cursor:pointer" class="prev"><span class="blind">prev</span></a></li>
+					</ul>
+				</div>
+			</div>
+			<!--//section3-->
+			
+			<div class="section4" id="character">
+				<div class="character_info">
+				<h2>ABOUT LINE FRIENDS</h2>
+				<ul>
+				<li>
+					<dl>
+					<dt>세상 밖으로 나온 모바일 캐릭터<!-- 세상 밖으로 나온 모바일 캐릭터 --></dt>
+					<dd>라인프렌즈는 2011년, 모바일 메신저 ‘라인’의 스티커 캐릭터로 탄생했습니다. 친근하고 공감가는 모습으로 사용자들에게 즐거움을 주는 라인프렌즈 캐릭터들은 모바일이라는 탄생배경을 넘어 일상 생활에서 가깝게 만날 수 있습니다. 5,000여 가지의 캐릭터 제품, 애니메이션, 게임, 카페, 호텔, 테마파크에 이르기까지 다양한 영역에서 세계인들의 사랑을 받는 브랜드가 되었습니다. <!-- 라인프렌즈는 2011년, 모바일 메신저 ‘라인’의 스티커 캐릭터로
+탄생했습니다. 친근하고 공감가는 모습으로 사용자들에게
+즐거움을 주는 라인프렌즈 캐릭터들은 모바일이라는 탄생배경을
+넘어 일상 생활에서 가깝게 만날 수 있습니다. 5,000여 가지의
+캐릭터 제품, 애니메이션, 게임, 카페, 호텔, 테마파크에 이르기까지
+다양한 영역에서 세계인들의 사랑을 받는 브랜드가 되었습니다. --> 
+</dd>
+					</dl>
+				</li>
+                 
+                				
+				<li>
+					<dl>
+					<dt>어른들이 좋아해도 부끄럽지 않은 캐릭터<!-- 어른들이 좋아해도 부끄럽지 않은 캐릭터 --></dt>
+					<dd>누가 캐릭터는 아이들을 위한 것이라고 했나요? 모바일 시대를 대표하는 문화 아이콘 라인프렌즈는 전 세계, 전 세대가 함께 즐기는 모두의 캐릭터입니다. 세계 주요 도시의 라인프렌즈 스토어에는 캐릭터들과 사랑에 빠진 가족에서부터 연인, 친구들로 언제나 가득합니다.<!-- 누가 캐릭터는 아이들을 위한 것이라고 했나요?
+모바일 시대를 대표하는 문화 아이콘 라인프렌즈는 전 세계,
+전 세대가 함께 즐기는 모두의 캐릭터입니다. 세계 주요 도시의 
+라인프렌즈 스토어에는 캐릭터들과 사랑에 빠진 가족에서부터 
+연인, 친구들로 언제나 가득합니다.  -->
+</dd>
+					</dl>
+				</li>
+				
+				
+				
+				
+				</ul>
+				
+				<ul>
+				<li>
+					<dl>
+					<dt>아시아 NO.1<!-- 아시아 NO.1 --></dt>
+					<dd>라인프렌즈는 라이선싱 비즈니스에 있어 세계 최고의 권위를 가진 LIMA-ALA를 수상하며 명실공히 아시아 NO.1 캐릭터로 자리잡았습니다. 세계적인 인기와 브랜드 가치에 힘입어 글로벌 브랜드들과의 콜라보레이션을 진행해오고 있으며, 유엔아동기금 UNICEF의 글로벌 파트너로 활동하고 있습니다.<!-- 라인프렌즈는 라이센싱 비즈니스에 있어 세계 최고의 권위를
+가진 LIMA-ALA를 수상하며 명실공히 아시아 NO.1 캐릭터로 
+자리잡았습니다. 
+세계적인 인기와 브랜드 가치에 힘입어 글로벌 브랜드들과의 
+콜라보레이션을 진행해오고 있으며, 유엔아동기금 UNICEF의 
+글로벌 파트너로 활동하고 있습니다. --></dd>
+					</dl>
+				</li>
+				
+				<li>
+					<dl>
+					<dt>라인프렌즈가 선보이는 새로운 경험<!-- 라인프렌즈가 선보이는 새로운 경험--></dt>
+					<dd>2015년, 캐릭터 브랜드로서의 가치를 더욱 높이고 캐릭터 사업의 전문성을 강화하기 위해 라인프렌즈 주식회사가 설립 되었습니다. 전 세계를 무대로 라인프렌즈가 선보이게 될 새로운 공간, 서비스, 제품들을 통해 다양한 즐거움을 만나보세요.<!-- 2015년, 캐릭터 브랜드로서의 가치를 더욱 높이고 캐릭터 
+사업의 전문성을 강화하기 위해 라인프렌즈 주식회사가 설립
+되었습니다. 
+전 세계를 무대로 라인프렌즈가 선보이게 될 새로운 공간, 서비스, 
+제품들을 통해 다양한 즐거움을 만나보세요.--></dd>
+					</dl>
+				</li>
+				</ul>
+				</div>
+				<div class="image_area">
+					<img src="/img/img_sec4.png" alt="LINE CHARACTER">
+				</div>
+			</div>
+			<!--//section4-->
+			
+			<div class="section5">
+				<div class="bg_l"></div>
+				<div class="bg_r"></div>
+					<div class="movie_area">
+						<div class="txt">
+						<h2>LINE FRIENDS</h2>
+						<p>라인의 대표캐릭터, 라인프렌즈를 만나보세요!<!-- 라인의 대표캐릭터, 라인프렌즈를 만나보세요! --></p>
+						<a data-movie="1" class="showMovie" style="cursor:pointer">영상보기<!-- 영상보기 --></a>
+						</div>
+					</div>
+					
+					<div class="movie_area2">
+						<div class="txt">
+						<h2>LINE RANGERS</h2>
+						<p>라인 레인저스 속 400여 종의 캐릭터를 만나보세요<!-- 라인 레인저스 속 400여 종의 캐릭터를 만나보세요!  --></p>
+						<a data-movie="2" class="showMovie" style="cursor:pointer">영상보기<!-- 영상보기  --></a>
+						</div>
+					</div>
+					
+				<!--[D]동영상 노출 레이어 팝업-->
+				<div class="ly" style="display:none" id="movie">
+					<div class="movie_popup">
+						<div class="movie">
+						<iframe width="854" height="480" src="https://www.youtube.com/embed/W7iKWFPnHUs" frameborder="0" allowfullscreen></iframe> 
+						</div>
+						<a onClick="" style="cursor:pointer" class="clse"><span class="blind">close</span></a>
+					</div>
+				</div>
+				
+				<div class="ly" style="display:none" id="movie2">
+					<div class="movie_popup">
+						<div class="movie">
+						<iframe width="854" height="480" src="https://www.youtube.com/embed/F-XgPNXE7uM" frameborder="0" allowfullscreen></iframe> 
+						</div>
+						<a onClick="" style="cursor:pointer" class="clse"><span class="blind">close</span></a>
+					</div>
+				</div>				
+				
+			</div>
+			<!--//section5-->
+<!-- wrap -->
+<div id="movieDim" class="dim" style="display:none;"></div>
+			
+<script>
+
+var gallary = {
+	    currentNum : 0,
+	    currentPagging : 1,
+	    currentImg : $("#g1"),
+	    nextImg : $("#g2"),
+	    gallaryList : [{"src":"/content/photo/201606/7a3fda5468fd4dcfb695158188778c8a.jpg", "map":"http://map.naver.com/?dlevel=12&pinType=site&pinId=37260636&x=126.9961625&y=37.5344752&enc=b64", "title":"서울 이태원 스토어"},
+	                   {"src":"/content/photo/201606/6e5e53ac63874319a3e7f67c13a1e96d.jpg", "map":"http://map.naver.com/?dlevel=12&pinType=site&pinId=37260636&x=126.9961625&y=37.5344752&enc=b64", "title":"서울 이태원 스토어"},
+	                   {"src":"/content/photo/201606/c5ecbd6446bf41619ce6e8ab490ddad7.jpg", "map":"http://map.naver.com/?dlevel=12&pinType=site&pinId=37260636&x=126.9961625&y=37.5344752&enc=b64", "title":"서울 이태원 스토어"},
+	                   {"src":"/content/photo/201606/23b229b42ba641c2ac3bcc7249a74354.jpg", "map":"http://map.naver.com/?dlevel=12&pinType=site&pinId=37260636&x=126.9961625&y=37.5344752&enc=b64", "title":"서울 이태원 스토어"},
+	                   {"src":"/content/photo/201606/ef098bd717da4df7a41ac96d889f5dd1.jpg", "map":"http://map.naver.com/?dlevel=12&pinType=site&pinId=37260636&x=126.9961625&y=37.5344752&enc=b64", "title":"서울 이태원 스토어"},
+	                   {"src":"/content/photo/201606/675dc7a38567468a81808b8a680e3748.jpg", "map":"http://map.naver.com/?dlevel=12&pinType=site&pinId=37260636&x=126.9961625&y=37.5344752&enc=b64", "title":"서울 이태원 스토어"},
+	                   {"src":"/content/photo/201606/b1a896f5f9a54f1fb5aa036ff199f7f4.jpg", "map":"http://map.naver.com/?dlevel=12&pinType=site&pinId=37260636&x=126.9961625&y=37.5344752&enc=b64", "title":"서울 이태원 스토어"},
+	                   {"src":"/content/photo/201606/eb6bac3a5fb040dca16c63e593b02ddb.jpg", "map":"http://map.naver.com/?dlevel=12&pinType=site&pinId=37260636&x=126.9961625&y=37.5344752&enc=b64", "title":"서울 이태원 스토어"},
+	                   {"src":"/content/photo/201606/5ab65ecac5564b7a8235fccc7f4bb5a1.jpg", "map":"http://map.naver.com/?dlevel=12&pinType=site&pinId=37260636&x=126.9961625&y=37.5344752&enc=b64", "title":"서울 이태원 스토어"},
+	                   {"src":"/content/photo/201606/c3d9cc1169f142f0b38458edff8fb508.jpg", "map":"http://map.naver.com/?dlevel=12&pinType=site&pinId=37260636&x=126.9961625&y=37.5344752&enc=b64", "title":"서울 이태원 스토어"},
+	                   {"src":"/content/photo/201606/171939409a05441abe6a5c1fe5c127ed.jpg", "map":"http://map.naver.com/?dlevel=12&pinType=site&pinId=37260636&x=126.9961625&y=37.5344752&enc=b64", "title":"서울 이태원 스토어"},
+	                   {"src":"/content/photo/201606/3a8def052dc4485a842761c341de7290.jpg", "map":"http://map.naver.com/?dlevel=12&pinType=site&pinId=37260636&x=126.9961625&y=37.5344752&enc=b64", "title":"서울 이태원 스토어"},
+	                   {"src":"/content/photo/201606/89de8266f64442dbb885b5fbc15f2170.jpg", "map":"http://map.naver.com/?dlevel=12&pinType=site&pinId=37260636&x=126.9961625&y=37.5344752&enc=b64", "title":"서울 이태원 스토어"},
+	                   {"src":"/content/photo/201606/4bee3979325e414fb6f25d24363a9fa4.jpg", "map":"http://map.naver.com/?dlevel=12&pinType=site&pinId=37260636&x=126.9961625&y=37.5344752&enc=b64", "title":"서울 이태원 스토어"},
+	                   {"src":"/content/photo/201606/29a1c4f2f4334ea48e7ef2c1d73257da.jpg", "map":"http://map.naver.com/?dlevel=12&pinType=site&pinId=37260636&x=126.9961625&y=37.5344752&enc=b64", "title":"서울 이태원 스토어"},
+	                   {"src":"/content/photo/201606/8179c06b3b3f48fe85e3cf99c57b46ae.jpg", "map":"http://map.naver.com/?dlevel=12&pinType=site&pinId=37260636&x=126.9961625&y=37.5344752&enc=b64", "title":"서울 이태원 스토어"},
+	                   {"src":"/content/photo/201606/b3b0bf85236847de8251c7ad5959f4c6.jpg", "map":"http://map.naver.com/?dlevel=12&pinType=site&pinId=37260636&x=126.9961625&y=37.5344752&enc=b64", "title":"서울 이태원 스토어"},
+	                   {"src":"/content/photo/201606/eb03a510a6ae4be1ad246f25ce8ecae8.jpg", "map":"http://map.naver.com/?dlevel=12&pinType=site&pinId=37260636&x=126.9961625&y=37.5344752&enc=b64", "title":"서울 이태원 스토어"},
+	                   {"src":"/content/photo/201606/f3a9858dc39e4b72875e9a9b7c01b406.jpg", "map":"http://map.naver.com/?dlevel=12&pinType=site&pinId=37260636&x=126.9961625&y=37.5344752&enc=b64", "title":"서울 이태원 스토어"},
+	                   {"src":"/content/photo/201606/85971e951ab04b44bdc9b71ca043991f.jpg", "map":"http://map.naver.com/?dlevel=12&pinType=site&pinId=36369636&x=127.0228720&y=37.5198744&enc=b64", "title":"서울 가로수길 스토어"},
+	                   {"src":"/content/photo/201606/222e57f15dd34a07875ff01ac441671e.jpg", "map":"http://map.naver.com/?dlevel=12&pinType=site&pinId=36369636&x=127.0228720&y=37.5198744&enc=b64", "title":"서울 가로수길 스토어"},
+	                   {"src":"/content/photo/201606/d862ceb4a4504ea7ac5ba154ff111996.jpg", "map":"http://map.naver.com/?dlevel=12&pinType=site&pinId=36369636&x=127.0228720&y=37.5198744&enc=b64", "title":"서울 가로수길 스토어"},
+	                   {"src":"/content/photo/201606/d39c0b1fe1244193b1dd68bcdbeff18d.jpg", "map":"http://map.naver.com/?dlevel=12&pinType=site&pinId=36369636&x=127.0228720&y=37.5198744&enc=b64", "title":"서울 가로수길 스토어"},
+	                   {"src":"/content/photo/201606/f9f679a337ee4b799f0b0128e85089b0.jpg", "map":"http://map.naver.com/?dlevel=12&pinType=site&pinId=36369636&x=127.0228720&y=37.5198744&enc=b64", "title":"서울 가로수길 스토어"},
+	                   {"src":"/content/photo/201606/51b54dac9d3649c0afbfcc494fb6ac07.jpg", "map":"http://map.naver.com/?dlevel=12&pinType=site&pinId=36369636&x=127.0228720&y=37.5198744&enc=b64", "title":"서울 가로수길 스토어"},
+	                   {"src":"/content/photo/201606/86916e4325044bfa983cd50252db78d7.jpg", "map":"http://map.naver.com/?dlevel=12&pinType=site&pinId=36369636&x=127.0228720&y=37.5198744&enc=b64", "title":"서울 가로수길 스토어"},
+	                   {"src":"/content/photo/201606/e398ed8c0a1d4f8ab6880c1a40f38d1e.jpg", "map":"http://map.naver.com/?dlevel=12&pinType=site&pinId=36369636&x=127.0228720&y=37.5198744&enc=b64", "title":"서울 가로수길 스토어"},
+	                   {"src":"/content/photo/201606/a02abc547e0d4cc68c85408ed310f451.jpg", "map":"http://map.naver.com/?dlevel=12&pinType=site&pinId=36369636&x=127.0228720&y=37.5198744&enc=b64", "title":"서울 가로수길 스토어"},
+	                   {"src":"/content/photo/201606/7d10af4b25844efba12dbd7d1a9ea751.jpg", "map":"http://map.naver.com/?dlevel=12&pinType=site&pinId=36369636&x=127.0228720&y=37.5198744&enc=b64", "title":"서울 가로수길 스토어"},
+	                   {"src":"/content/photo/201606/d4c00aa1d4364204bc6d0ebe9d6769e5.jpg", "map":"http://map.naver.com/?dlevel=12&pinType=site&pinId=36369636&x=127.0228720&y=37.5198744&enc=b64", "title":"서울 가로수길 스토어"},
+	                   {"src":"/content/photo/201606/8d7497020e184271bea9093895197eeb.jpg", "map":"http://map.naver.com/?dlevel=12&pinType=site&pinId=36369636&x=127.0228720&y=37.5198744&enc=b64", "title":"서울 가로수길 스토어"},
+	                   {"src":"/content/photo/201606/11befd813153489a9455853204d2631a.jpg", "map":"http://map.naver.com/?dlevel=12&pinType=site&pinId=36369636&x=127.0228720&y=37.5198744&enc=b64", "title":"서울 가로수길 스토어"},
+	                   {"src":"/content/photo/201606/afe668d82e3648e5a99230160297ca11.jpg", "map":"http://map.naver.com/?dlevel=12&pinType=site&pinId=37027463&x=127.1124790&y=37.3924582&enc=b64", "title":"성남 판교 현대백화점"},
+	                   {"src":"/content/photo/201606/6b77ad4696c34599a16c7e66454e83b1.jpg", "map":"http://map.naver.com/?dlevel=12&pinType=site&pinId=37027463&x=127.1124790&y=37.3924582&enc=b64", "title":"성남 판교 현대백화점"},
+	                   {"src":"/content/photo/201606/e7cbf9a216464497ba7be98ff50ac9b8.jpg", "map":"http://map.naver.com/?dlevel=12&pinType=site&pinId=37027463&x=127.1124790&y=37.3924582&enc=b64", "title":"성남 판교 현대백화점"},
+	                   {"src":"/content/photo/201606/867aaf04862640588fbc0d19baabcde7.jpg", "map":"http://map.naver.com/?dlevel=12&pinType=site&pinId=37027463&x=127.1124790&y=37.3924582&enc=b64", "title":"성남 판교 현대백화점"},
+	                   {"src":"/content/photo/201606/428d170e39ab4a2885049f7fd049d050.jpg", "map":"http://map.naver.com/?dlevel=12&pinType=site&pinId=37027463&x=127.1124790&y=37.3924582&enc=b64", "title":"성남 판교 현대백화점"},
+	                   {"src":"/content/photo/201606/ccfdf3cf646e4ff19ed06fa0ab16ea23.jpg", "map":"http://map.naver.com/?dlevel=12&pinType=site&pinId=37027463&x=127.1124790&y=37.3924582&enc=b64", "title":"성남 판교 현대백화점"},
+	                   {"src":"/content/photo/201606/81f0cb73fa7841d395ef11d5ed691ce1.jpg", "map":"http://map.naver.com/?dlevel=12&pinType=site&pinId=37027463&x=127.1124790&y=37.3924582&enc=b64", "title":"성남 판교 현대백화점"},
+	                   {"src":"/content/photo/201606/041b0de100e44a2c84d031c3eac81410.jpg", "map":"http://map.naver.com/?dlevel=12&pinType=site&pinId=37027463&x=127.1124790&y=37.3924582&enc=b64", "title":"성남 판교 현대백화점"},
+	                   {"src":"/content/photo/201606/7fd9c9adc1d14bcdbd6e5a1288da4b38.jpg", "map":"http://map.naver.com/?dlevel=12&pinType=site&pinId=37027463&x=127.1124790&y=37.3924582&enc=b64", "title":"성남 판교 현대백화점"},
+	                   {"src":"/content/photo/201606/21a939b54fe643e1911a1755447de437.jpg", "map":"http://map.naver.com/?dlevel=12&pinType=site&pinId=37027463&x=127.1124790&y=37.3924582&enc=b64", "title":"성남 판교 현대백화점"},
+	                   {"src":"/content/photo/201606/ba84a88a677a45a7acfab4a48ce2af77.jpg", "map":"http://map.naver.com/?dlevel=12&pinType=site&pinId=37027463&x=127.1124790&y=37.3924582&enc=b64", "title":"성남 판교 현대백화점"},
+	                   {"src":"/content/photo/201606/2d6764f51c824109b109deeab52952d7.jpg", "map":"http://map.naver.com/?dlevel=12&pinType=site&pinId=37027463&x=127.1124790&y=37.3924582&enc=b64", "title":"성남 판교 현대백화점"},
+	                   {"src":"/content/photo/201606/563dec5fe7454437a3c0681f52767fea.jpg", "map":"http://map.naver.com/?dlevel=12&pinType=site&pinId=37027463&x=127.1124790&y=37.3924582&enc=b64", "title":"성남 판교 현대백화점"},
+	                   {"src":"/content/photo/201606/142183c09f14447b871c0d725bf35597.jpg", "map":"http://map.naver.com/?dlevel=12&pinType=site&pinId=37027463&x=127.1124790&y=37.3924582&enc=b64", "title":"성남 판교 현대백화점"},
+	                   {"src":"/content/photo/201606/ec041624b6e148e68cc6062eb53fd108.jpg", "map":"http://map.naver.com/?dlevel=12&pinType=site&pinId=34842844&x=126.9816196&y=37.5636783&enc=b64", "title":"서울 명동 롯데백화점 영플라자"},
+	                   {"src":"/content/photo/201606/90ceafe407b04feba372e2d007e5ae25.jpg", "map":"http://map.naver.com/?dlevel=12&pinType=site&pinId=34842844&x=126.9816196&y=37.5636783&enc=b64", "title":"서울 명동 롯데백화점 영플라자"},
+	                   {"src":"/content/photo/201606/3dcf4c3efc4d4140a904752aad5fb329.jpg", "map":"http://map.naver.com/?dlevel=12&pinType=site&pinId=34842844&x=126.9816196&y=37.5636783&enc=b64", "title":"서울 명동 롯데백화점 영플라자"},
+	                   {"src":"/content/photo/201606/93f15ac34d8f4748ada05d41729d13ef.jpg", "map":"http://map.naver.com/?dlevel=12&pinType=site&pinId=34842844&x=126.9816196&y=37.5636783&enc=b64", "title":"서울 명동 롯데백화점 영플라자"},
+	                   {"src":"/content/photo/201606/da96982cb7b6495eb730d7d881a83606.jpg", "map":"http://map.naver.com/?dlevel=12&pinType=site&pinId=34842844&x=126.9816196&y=37.5636783&enc=b64", "title":"서울 명동 롯데백화점 영플라자"},
+	                   {"src":"/content/photo/201606/cdbdf2a2eadf4f959bc8770c0d33aebf.jpg", "map":"http://map.naver.com/?dlevel=12&pinType=site&pinId=34842844&x=126.9816196&y=37.5636783&enc=b64", "title":"서울 명동 롯데백화점 영플라자"},
+	                   {"src":"/content/photo/201606/0cf785d0023f414ea82f0c6dbc3fd9fa.jpg", "map":"http://map.naver.com/?dlevel=12&pinType=site&pinId=34842844&x=126.9816196&y=37.5636783&enc=b64", "title":"서울 명동 롯데백화점 영플라자"},
+	                   {"src":"/content/photo/201606/e24e2dfdfaaa442bbbedf3b5afebe4cd.jpg", "map":"http://map.naver.com/?dlevel=12&pinType=site&pinId=34842844&x=126.9816196&y=37.5636783&enc=b64", "title":"서울 명동 롯데백화점 영플라자"},
+	                   {"src":"/content/photo/201606/3cee3c382bac428ca5cc9979a9d29651.jpg", "map":"http://map.naver.com/?dlevel=12&pinType=site&pinId=34842844&x=126.9816196&y=37.5636783&enc=b64", "title":"서울 명동 롯데백화점 영플라자"},
+	                   {"src":"/content/photo/201606/8fccb5c87a704362988167011efbb7a6.jpg", "map":"http://map.naver.com/?dlevel=12&pinType=site&pinId=37394679&x=126.9843628&y=37.5614056&enc=b64", "title":"서울 명동역 스토어"},
+	                   {"src":"/content/photo/201606/acbd24570d5440e8afe31f4b3f569661.jpg", "map":"http://map.naver.com/?dlevel=12&pinType=site&pinId=37394679&x=126.9843628&y=37.5614056&enc=b64", "title":"서울 명동역 스토어"},
+	                   {"src":"/content/photo/201606/a2da1a3d3f844579b87ca9e0965a973c.jpg", "map":"http://map.naver.com/?dlevel=12&pinType=site&pinId=37394679&x=126.9843628&y=37.5614056&enc=b64", "title":"서울 명동역 스토어"},
+	                   {"src":"/content/photo/201606/e8552d8bf3f740029d404f1173ee5f48.jpg", "map":"http://map.naver.com/?dlevel=12&pinType=site&pinId=37394679&x=126.9843628&y=37.5614056&enc=b64", "title":"서울 명동역 스토어"},
+	                   {"src":"/content/photo/201606/c54c7b4b8cfe4dc895911d737f340573.jpg", "map":"http://map.naver.com/?dlevel=12&pinType=site&pinId=37394679&x=126.9843628&y=37.5614056&enc=b64", "title":"서울 명동역 스토어"},
+	                   {"src":"/content/photo/201606/78d1c7ed53464a2eb20644b5ee42dc63.jpg", "map":"http://map.naver.com/?dlevel=12&pinType=site&pinId=37394679&x=126.9843628&y=37.5614056&enc=b64", "title":"서울 명동역 스토어"},
+	                   {"src":"/content/photo/201606/7f4b4977177447e18f66a51560d1f74c.jpg", "map":"http://map.naver.com/?dlevel=12&pinType=site&pinId=37394679&x=126.9843628&y=37.5614056&enc=b64", "title":"서울 명동역 스토어"},
+	                   {"src":"/content/photo/201606/573b09b8773a49c0983339353fed476b.jpg", "map":"http://map.naver.com/?dlevel=12&pinType=site&pinId=37394679&x=126.9843628&y=37.5614056&enc=b64", "title":"서울 명동역 스토어"},
+	                   {"src":"/content/photo/201606/7e6793dfd8664f10b2fa9717e1097c40.jpg", "map":"http://map.naver.com/?dlevel=12&pinType=site&pinId=37394679&x=126.9843628&y=37.5614056&enc=b64", "title":"서울 명동역 스토어"},
+	                   {"src":"/content/photo/201606/30f440d3e8ab4f1c94cd8e828f59a85e.jpg", "map":"http://map.naver.com/?dlevel=12&pinType=site&pinId=37394679&x=126.9843628&y=37.5614056&enc=b64", "title":"서울 명동역 스토어"},
+	                   {"src":"/content/photo/201606/7ee787e8751540bd9c4f6881b99b14cb.jpg", "map":"http://map.naver.com/?dlevel=12&pinType=site&pinId=37394679&x=126.9843628&y=37.5614056&enc=b64", "title":"서울 명동역 스토어"},
+	                   {"src":"/content/photo/201606/828e722e7b52460faeadadda4760a02f.jpg", "map":"http://map.naver.com/?dlevel=12&pinType=site&pinId=37394679&x=126.9843628&y=37.5614056&enc=b64", "title":"서울 명동역 스토어"},
+	                   {"src":"/content/photo/201606/727c6a7081fd40088fd4702243de501d.jpg", "map":"http://map.naver.com/?dlevel=12&pinType=site&pinId=37027006&x=126.9359624&y=37.5557503&enc=b64", "title":"서울 신촌 현대백화점"},
+	                   {"src":"/content/photo/201606/6ef13652b70940b2b3b0b8c327cac300.jpg", "map":"http://map.naver.com/?dlevel=12&pinType=site&pinId=37027006&x=126.9359624&y=37.5557503&enc=b64", "title":"서울 신촌 현대백화점"},
+	                   {"src":"/content/photo/201606/5c9290700f2d4280bbf7b7bdd2b93b7f.jpg", "map":"http://map.naver.com/?dlevel=12&pinType=site&pinId=37027006&x=126.9359624&y=37.5557503&enc=b64", "title":"서울 신촌 현대백화점"},
+	                   {"src":"/content/photo/201606/402737eccc17468ea16d3c685f152d1f.jpg", "map":"http://map.naver.com/?dlevel=12&pinType=site&pinId=37027006&x=126.9359624&y=37.5557503&enc=b64", "title":"서울 신촌 현대백화점"},
+	                   {"src":"/content/photo/201606/b63bc21134864b1f9b7eaed0f945334a.jpg", "map":"http://map.naver.com/?dlevel=12&pinType=site&pinId=37027006&x=126.9359624&y=37.5557503&enc=b64", "title":"서울 신촌 현대백화점"},
+	                   {"src":"/content/photo/201606/84d5f727689c4215bc58511617d82a53.jpg", "map":"http://map.naver.com/?dlevel=12&pinType=site&pinId=37027006&x=126.9359624&y=37.5557503&enc=b64", "title":"서울 신촌 현대백화점"},
+	                   {"src":"/content/photo/201606/ca916646e7674a27b58b7ffc4381b2f4.jpg", "map":"http://map.naver.com/?dlevel=12&pinType=site&pinId=36782644&x=127.0089232&y=37.5688652&enc=b64", "title":"서울 동대문 두타"},
+	                   {"src":"/content/photo/201606/ee82b3c07a3a4049819a14def080fe38.jpg", "map":"http://map.naver.com/?dlevel=12&pinType=site&pinId=36782644&x=127.0089232&y=37.5688652&enc=b64", "title":"서울 동대문 두타"},
+	                   {"src":"/content/photo/201606/041cb1d1d94346a1822e071221e387c0.jpg", "map":"http://map.naver.com/?dlevel=12&pinType=site&pinId=36782644&x=127.0089232&y=37.5688652&enc=b64", "title":"서울 동대문 두타"},
+	                   {"src":"/content/photo/201606/3ec3b1bf779142458dadec0328a47db9.jpg", "map":"http://map.naver.com/?dlevel=12&pinType=site&pinId=36782644&x=127.0089232&y=37.5688652&enc=b64", "title":"서울 동대문 두타"},
+	                   {"src":"/content/photo/201606/82c4a17e06494e8ebc5f7cc720c4d48b.jpg", "map":"http://map.naver.com/?dlevel=12&pinType=site&pinId=36782644&x=127.0089232&y=37.5688652&enc=b64", "title":"서울 동대문 두타"},
+	                   {"src":"/content/photo/201606/2f3bac0ebf2742748634fec2b832d589.jpg", "map":"http://map.naver.com/?dlevel=12&pinType=site&pinId=36782644&x=127.0089232&y=37.5688652&enc=b64", "title":"서울 동대문 두타"},
+	                   {"src":"/content/photo/201606/f20e385acbfd428da26660590cb56720.jpg", "map":"http://map.naver.com/?dlevel=12&pinType=site&pinId=36782644&x=127.0089232&y=37.5688652&enc=b64", "title":"서울 동대문 두타"},
+	                   {"src":"/content/photo/201606/bcdd925ac8b84de6b0dbfc1be69e393b.jpg", "map":"http://j.map.baidu.com/cdVAH", "title":"상해 신천지 소호광장"},
+	                   {"src":"/content/photo/201606/c1c1bb2050224e92ac5b17724d152f78.jpg", "map":"http://j.map.baidu.com/cdVAH", "title":"상해 신천지 소호광장"},
+	                   {"src":"/content/photo/201606/4795a98d74cc49c1977a10dbedc47292.jpg", "map":"http://j.map.baidu.com/cdVAH", "title":"상해 신천지 소호광장"},
+	                   {"src":"/content/photo/201606/57b2a48a5bd84e2ca69fd4778060a195.jpg", "map":"http://j.map.baidu.com/cdVAH", "title":"상해 신천지 소호광장"},
+	                   {"src":"/content/photo/201606/c0fa2c354cdf4f6b9e078699b67d5333.jpg", "map":"http://j.map.baidu.com/cdVAH", "title":"상해 신천지 소호광장"},
+	                   {"src":"/content/photo/201606/975f2e0717d242b39eb587ef98d44ba8.jpg", "map":"http://j.map.baidu.com/cdVAH", "title":"상해 신천지 소호광장"},
+	                   {"src":"/content/photo/201606/cc0b87e4f04643acb918a1bf54313ca9.jpg", "map":"http://j.map.baidu.com/cdVAH", "title":"상해 신천지 소호광장"},
+	                   {"src":"/content/photo/201606/b316991b2c524a8a93fac769b798b855.jpg", "map":"http://j.map.baidu.com/cdVAH", "title":"상해 신천지 소호광장"},
+	                   {"src":"/content/photo/201606/d73fcc84f895491d81a3f233c460c01f.jpg", "map":"http://j.map.baidu.com/cdVAH", "title":"상해 신천지 소호광장"},
+	                   {"src":"/content/photo/201606/9edbf0d96d864a90bfd800f2b285e571.jpg", "map":"http://j.map.baidu.com/cdVAH", "title":"상해 신천지 소호광장"},
+	                   {"src":"/content/photo/201606/f7a968ed683f4806af21cc3380615e00.jpg", "map":"http://j.map.baidu.com/cdVAH", "title":"상해 신천지 소호광장"},
+	                   {"src":"/content/photo/201606/9ccbe5953f0a4174bdc8ff705b64af1d.jpg", "map":"http://j.map.baidu.com/cdVAH", "title":"상해 신천지 소호광장"},
+	                   {"src":"/content/photo/201606/f152d394a250410c97417a24675cf790.jpg", "map":"http://j.map.baidu.com/cdVAH", "title":"상해 신천지 소호광장"},
+	                   {"src":"/content/photo/201606/7759b7b241714ba3810df4778959cdeb.jpg", "map":"http://j.map.baidu.com/cdVAH", "title":"상해 신천지 소호광장"},
+	                   {"src":"/content/photo/201606/de55fc9cbdc7435db6869d19b0ff2a23.jpg", "map":"http://j.map.baidu.com/cdVAH", "title":"상해 신천지 소호광장"},
+	                   {"src":"/content/photo/201606/12273f11520a46f69e53796bfbede541.jpg", "map":"http://j.map.baidu.com/cdVAH", "title":"상해 신천지 소호광장"},
+	                   {"src":"/content/photo/201606/c1c28af6badf4a849f9ff5de8d5d429c.jpg", "map":"https://www.google.co.kr/maps/place/LINE+FRIENDS+STORE+%E4%BB%99%E5%8F%B0/@38.2612847,140.869992,17z/data=!3m1!4b1!4m2!3m1!1s0x5f8a283c84baaaab:0x8fb79855282797ec", "title":"센다이 아오바구 이치방쵸"},
+	                   {"src":"/content/photo/201606/2a8a25ebbf0444fe94e17c6d03b5de31.jpg", "map":"https://www.google.co.kr/maps/place/LINE+FRIENDS+STORE+%E4%BB%99%E5%8F%B0/@38.2612847,140.869992,17z/data=!3m1!4b1!4m2!3m1!1s0x5f8a283c84baaaab:0x8fb79855282797ec", "title":"센다이 아오바구 이치방쵸"},
+	                   {"src":"/content/photo/201606/c35b2bf131c94cfab5f92f977c96ac6b.jpg", "map":"https://www.google.co.kr/maps/place/LINE+FRIENDS+STORE+%E4%BB%99%E5%8F%B0/@38.2612847,140.869992,17z/data=!3m1!4b1!4m2!3m1!1s0x5f8a283c84baaaab:0x8fb79855282797ec", "title":"센다이 아오바구 이치방쵸"},
+	                   {"src":"/content/photo/201606/5ee64c50fac7478eaad2f430913865b5.jpg", "map":"https://www.google.co.kr/maps/place/LINE+FRIENDS+STORE+%E4%BB%99%E5%8F%B0/@38.2612847,140.869992,17z/data=!3m1!4b1!4m2!3m1!1s0x5f8a283c84baaaab:0x8fb79855282797ec", "title":"센다이 아오바구 이치방쵸"},
+	                   {"src":"/content/photo/201606/9483e2170081499c8d73e305fda2c94c.jpg", "map":"https://www.google.co.kr/maps/place/LINE+FRIENDS+STORE+%E4%BB%99%E5%8F%B0/@38.2612847,140.869992,17z/data=!3m1!4b1!4m2!3m1!1s0x5f8a283c84baaaab:0x8fb79855282797ec", "title":"센다이 아오바구 이치방쵸"},
+	                   {"src":"/content/photo/201606/7d0824b1643747a3a03095cd466d1814.jpg", "map":"https://www.google.co.kr/maps/place/LINE+FRIENDS+STORE+%E4%BB%99%E5%8F%B0/@38.2612847,140.869992,17z/data=!3m1!4b1!4m2!3m1!1s0x5f8a283c84baaaab:0x8fb79855282797ec", "title":"센다이 아오바구 이치방쵸"},
+	                   {"src":"/content/photo/201606/7b35d1dc41834d93bdf66a4eac8a1141.jpg", "map":"https://www.google.co.kr/maps/place/LINE+FRIENDS+STORE+%E4%BB%99%E5%8F%B0/@38.2612847,140.869992,17z/data=!3m1!4b1!4m2!3m1!1s0x5f8a283c84baaaab:0x8fb79855282797ec", "title":"센다이 아오바구 이치방쵸"},
+	                   {"src":"/content/photo/201606/1967e4e875e7433b888a65dc11614fdb.jpg", "map":"https://www.google.co.kr/maps/place/LINE+FRIENDS+STORE+%E4%BB%99%E5%8F%B0/@38.2612847,140.869992,17z/data=!3m1!4b1!4m2!3m1!1s0x5f8a283c84baaaab:0x8fb79855282797ec", "title":"센다이 아오바구 이치방쵸"},
+	                   {"src":"/content/photo/201606/a6ab5dd75d0f47848a239147234f5323.jpg", "map":"https://www.google.co.kr/maps/place/LINE+FRIENDS+STORE+%E4%BB%99%E5%8F%B0/@38.2612847,140.869992,17z/data=!3m1!4b1!4m2!3m1!1s0x5f8a283c84baaaab:0x8fb79855282797ec", "title":"센다이 아오바구 이치방쵸"},
+	                   {"src":"/content/photo/201606/20e9becf8662487fafd6820c6acb6a02.jpg", "map":"https://www.google.co.kr/maps/place/LINE+FRIENDS+STORE/@35.6696741,139.7043121,17z/data=!3m1!4b1!4m2!3m1!1s0x60188ca363294bbd:0x3c791b8715b76142", "title":"도쿄 하라주쿠 진구마에"},
+	                   {"src":"/content/photo/201606/d89e779fb4e3435ab414405a7ad54059.jpg", "map":"https://www.google.co.kr/maps/place/LINE+FRIENDS+STORE/@35.6696741,139.7043121,17z/data=!3m1!4b1!4m2!3m1!1s0x60188ca363294bbd:0x3c791b8715b76142", "title":"도쿄 하라주쿠 진구마에"},
+	                   {"src":"/content/photo/201606/14918a33b0c4472a811df35d30b8a9f5.jpg", "map":"https://www.google.co.kr/maps/place/LINE+FRIENDS+STORE/@35.6696741,139.7043121,17z/data=!3m1!4b1!4m2!3m1!1s0x60188ca363294bbd:0x3c791b8715b76142", "title":"도쿄 하라주쿠 진구마에"},
+	                   {"src":"/content/photo/201606/ca751f205cb543768ae4f3575ae80a69.jpg", "map":"https://www.google.co.kr/maps/place/LINE+FRIENDS+STORE/@35.6696741,139.7043121,17z/data=!3m1!4b1!4m2!3m1!1s0x60188ca363294bbd:0x3c791b8715b76142", "title":"도쿄 하라주쿠 진구마에"},
+	                   {"src":"/content/photo/201606/95b230b09696476896b0ffba931dd0ca.jpg", "map":"https://www.google.co.kr/maps/place/LINE+FRIENDS+STORE/@35.6696741,139.7043121,17z/data=!3m1!4b1!4m2!3m1!1s0x60188ca363294bbd:0x3c791b8715b76142", "title":"도쿄 하라주쿠 진구마에"},
+	                   {"src":"/content/photo/201606/3f9324d7881e40cfa7f4811b8addfbca.jpg", "map":"https://www.google.co.kr/maps/place/LINE+FRIENDS+STORE/@35.6696741,139.7043121,17z/data=!3m1!4b1!4m2!3m1!1s0x60188ca363294bbd:0x3c791b8715b76142", "title":"도쿄 하라주쿠 진구마에"},
+	                   {"src":"/content/photo/201606/1caad4fb0d5c430db58041bc49de5270.jpg", "map":"https://www.google.co.kr/maps/place/LINE+FRIENDS+STORE/@35.6696741,139.7043121,17z/data=!3m1!4b1!4m2!3m1!1s0x60188ca363294bbd:0x3c791b8715b76142", "title":"도쿄 하라주쿠 진구마에"},
+	                   {"src":"/content/photo/201606/edaee796c737443fa28286d8ab83959a.jpg", "map":"https://www.google.co.kr/maps/place/LINE+FRIENDS+STORE/@35.6696741,139.7043121,17z/data=!3m1!4b1!4m2!3m1!1s0x60188ca363294bbd:0x3c791b8715b76142", "title":"도쿄 하라주쿠 진구마에"},
+	                   {"src":"/content/photo/201606/2032a432d6a64e24a941f357498b61b7.jpg", "map":"https://www.google.co.kr/maps/place/LINE+FRIENDS+STORE/@35.6696741,139.7043121,17z/data=!3m1!4b1!4m2!3m1!1s0x60188ca363294bbd:0x3c791b8715b76142", "title":"도쿄 하라주쿠 진구마에"},
+	                   {"src":"/content/photo/201606/3ada64cede5442928a29f7a6ec796ddc.jpg", "map":"https://www.google.co.kr/maps/place/LINE+FRIENDS+STORE/@35.6696741,139.7043121,17z/data=!3m1!4b1!4m2!3m1!1s0x60188ca363294bbd:0x3c791b8715b76142", "title":"도쿄 하라주쿠 진구마에"},
+	                   {"src":"/content/photo/201606/8b9943faaf4f42e9bfca18f5daf8f458.jpg", "map":"https://www.google.co.kr/maps/place/LINE+FRIENDS+STORE/@35.6696741,139.7043121,17z/data=!3m1!4b1!4m2!3m1!1s0x60188ca363294bbd:0x3c791b8715b76142", "title":"도쿄 하라주쿠 진구마에"},
+	                   {"src":"/content/photo/201606/61bbfb0b2aad4a869eaa211fc4d16a35.jpg", "map":"https://www.google.co.kr/maps/place/LINE+FRIENDS+STORE/@25.0384096,121.5651208,17z/data=!3m1!4b1!4m2!3m1!1s0x3442abba48d3b7f1:0x6ec3b5786805e5c6", "title":"타이페이 신이 브리즈 송가오"},
+	                   {"src":"/content/photo/201606/8ff53c7259b74152894452f05ce6f58d.jpg", "map":"https://www.google.co.kr/maps/place/LINE+FRIENDS+STORE/@25.0384096,121.5651208,17z/data=!3m1!4b1!4m2!3m1!1s0x3442abba48d3b7f1:0x6ec3b5786805e5c6", "title":"타이페이 신이 브리즈 송가오"},
+	                   {"src":"/content/photo/201606/51b9f60f5bf44d77aacd285b09d32baf.jpg", "map":"https://www.google.co.kr/maps/place/LINE+FRIENDS+STORE/@25.0384096,121.5651208,17z/data=!3m1!4b1!4m2!3m1!1s0x3442abba48d3b7f1:0x6ec3b5786805e5c6", "title":"타이페이 신이 브리즈 송가오"},
+	                   {"src":"/content/photo/201606/2004e458e9bd4dda8a8a48c7db8febfe.jpg", "map":"https://www.google.co.kr/maps/place/LINE+FRIENDS+STORE/@25.0384096,121.5651208,17z/data=!3m1!4b1!4m2!3m1!1s0x3442abba48d3b7f1:0x6ec3b5786805e5c6", "title":"타이페이 신이 브리즈 송가오"},
+	                   {"src":"/content/photo/201606/95cf01fa38ea48128f4bfc2e643eb873.jpg", "map":"https://www.google.co.kr/maps/place/LINE+FRIENDS+STORE/@25.0384096,121.5651208,17z/data=!3m1!4b1!4m2!3m1!1s0x3442abba48d3b7f1:0x6ec3b5786805e5c6", "title":"타이페이 신이 브리즈 송가오"},
+	                   {"src":"/content/photo/201606/2613d080ee6545a5a02bee8d5c5fda12.jpg", "map":"https://www.google.co.kr/maps/place/LINE+FRIENDS+STORE/@25.0384096,121.5651208,17z/data=!3m1!4b1!4m2!3m1!1s0x3442abba48d3b7f1:0x6ec3b5786805e5c6", "title":"타이페이 신이 브리즈 송가오"},
+	                   {"src":"/content/photo/201606/f7a2f5f0287d425fbafa541e976c1436.jpg", "map":"https://www.google.co.kr/maps/place/LINE+FRIENDS+STORE/@25.0384096,121.5651208,17z/data=!3m1!4b1!4m2!3m1!1s0x3442abba48d3b7f1:0x6ec3b5786805e5c6", "title":"타이페이 신이 브리즈 송가오"},
+	                   {"src":"/content/photo/201606/2de668544ddc4383bad7cd812d4f3877.jpg", "map":"https://www.google.co.kr/maps/place/LINE+FRIENDS+STORE/@25.0384096,121.5651208,17z/data=!3m1!4b1!4m2!3m1!1s0x3442abba48d3b7f1:0x6ec3b5786805e5c6", "title":"타이페이 신이 브리즈 송가오"},
+	                   {"src":"/content/photo/201606/eca0438fb3584ae5acb853b7799fd299.jpg", "map":"https://www.google.co.kr/maps/place/LINE+FRIENDS+STORE/@25.0384096,121.5651208,17z/data=!3m1!4b1!4m2!3m1!1s0x3442abba48d3b7f1:0x6ec3b5786805e5c6", "title":"타이페이 신이 브리즈 송가오"},
+	                   ],
+	     
+	    getImgNum : function (num) {
+	         return this.gallaryList[num];
+	    },
+	             
+	    next : function () {
+	    	if(this.currentNum%5 !=4) {
+		    	this.currentNum +=1;
+		    	if(this.currentNum > this.gallaryList.length) this.currentNum = 0;
+		    	this.choose(this.currentNum%5);
+	    	} else {
+	    		this.nextPage();
+	    	}
+	    },   
+
+	    prev : function () {
+	    	if(this.currentNum%5 !=0) {
+		        this.currentNum -=1;
+		        if(this.currentNum < 0) this.currentNum = this.gallaryList.length-1;
+		        this.choose(this.currentNum%5);
+	    	} else {
+	    		this.prevPage();
+	    	}
+	    },
+	     
+	     /**
+	     * 0~4까지 숫자만 넘어옴
+	     */
+	     choose : function (num) {
+	         this.currentImg.stop();
+	         this.nextImg.stop();
+	         var chooseNum = (this.currentPagging-1)*5 + num;  
+	         
+	         $(".img_rolling a").removeClass("on");
+	         
+	         var result = gallary.getImgNum(chooseNum);
+	         $("#gallary_title").html(result.title);
+	         $("#gallary_title").parent().attr("href", result.map);
+	         this.nextImg.attr("src", result.src);
+	      
+	         $($(".img_rolling a")[num]).addClass("on");
+	         
+	         this.show();
+ 	     },
+	     
+        /**
+         * 전체 이미지 갱신
+         */
+	     reloadPage : function () {
+	    	 this.currentPagging = Math.ceil((this.currentNum+1)/5);
+	    	 $(".img_rolling a").removeClass("on");
+	    	 
+             $(".img_rolling img").each(function(num) {
+                 var result = gallary.getImgNum((gallary.currentPagging-1)*5+num);
+                 this.src = result.src;
+             });
+             
+             
+             $($(".img_rolling a")[this.currentNum%5]).addClass("on");
+	     },
+	     
+	     prevPage : function() {
+	    	 this.currentNum -= (this.currentNum%5+1);
+	    	 if(this.currentNum < 0) this.currentNum = this.gallaryList.length-1;
+	    	 this.reloadPage();
+	    	 this.choose(this.currentNum%5);
+	     },
+     
+	     nextPage : function() {
+	    	 this.currentNum += (5-this.currentNum%5);
+	    	 if(this.currentNum > this.gallaryList.length-1) this.currentNum = 0;
+	    	 this.reloadPage();
+	    	 this.choose(this.currentNum%5);
+	     },	     
+	     
+	     show : function () {
+	        var next    = this.nextImg;
+	        var current = this.currentImg;
+	        //next.css('z-index',2);//move the next image up the pile
+	        
+	        current.fadeOut();
+	        $(next).fadeIn(1000);
+	          
+	        this.currentImg = next;
+	        this.nextImg =  current;
+	     }
+	}
+
+function pad(n, width, z) {
+	  z = z || '0';
+	  n = n + '';
+	  return n.length >= width ? n : new Array(width - n.length + 1).join(z) + n;
+}
+
+	
+var cycleImages =  {
+	autoTimer : 0,
+	current : 0,
+	next : function() {
+		var next = (this.current+1 == $('.spot_bg_img img').length) ? 0 : this.current+1;
+		this.show($('.spot_bg_img img')[next]);
+	},
+	
+	prev : function() {
+		var prev = (this.current == 0) ?  $('.spot_bg_img img').length -1 : this.current - 1;
+		this.show($('.spot_bg_img img')[prev]);
+	},
+		
+	choose : function(num) {
+		this.show($($('.spot_bg_img img')[num]));
+	},
+	
+	show : function(view) {
+		 
+	    $('.page a').each(function(){
+	    	$(this).removeClass('on');
+	    })
+		
+	    var $active = $($('.spot_bg_img img')[this.current]);
+	    
+	    $active.stop();
+	    
+ 	    this.current = $(view).data("img");
+	    
+	    $('#img'+$(view).data("img")).addClass("on");
+	    // $(view).css('z-index',2);//move the next image up the pile
+	    $active.fadeOut();
+	    $(view).fadeIn(1000);
+		/* 
+	    $('#background_cycler')
+		    .animate({opacity: 0}, 'slow', function() {
+		        $(this)
+		         .css({'background-image': 'url(../img/01.jpg)', 'background-position':'center' })
+		         .animate({opacity: 1});
+		});
+		*/
+	} 
+}
+
+
+var scrollMove = function (el) {
+	var topPosition = 0;
+	
+	if($(el).offset() != null) {
+ 		topPosition = $(el).offset().top;
+ 	}
+ 	
+	$('body, html').stop();
+	$('body, html').animate(
+			{    
+				scrollTop: topPosition
+			},
+			 "very slow");
+};
+ 
+$(function() {
+	$(window).bind("scroll", function(){
+		
+		  if ($(window).scrollTop() >= $("#character").offset().top - 100) {
+			  
+			  $(".navi a").removeClass("on");
+			  $($(".navi a")[3]).addClass("on");
+		  } else if($(window).scrollTop() >= $("#gallery").offset().top - 100) {
+			  
+			  $(".navi a").removeClass("on");
+			  $($(".navi a")[2]).addClass("on");
+		  } else if ($(window).scrollTop() >= $("#store").offset().top-100) {
+			  
+			  $(".navi a").removeClass("on");
+			  $($(".navi a")[1]).addClass("on");
+		  } else if ($(window).scrollTop() >= $("#business").offset().top-100) {
+			  
+			  $(".navi a").removeClass("on");
+			  $($(".navi a")[0]).addClass("on");
+		  } else {
+
+			  $(".navi a").removeClass("on");
+		  }
+		  
+		  if($(window).scrollTop() == 0 ) {
+			  $("#header").removeClass("fix");
+		  } else {
+			  $("#header").addClass("fix");
+		  }
+		});
+});
+
+$(window).resize(function () {
+	// 이미지 사이즈 1800*1160
+	resizeGally();
+}) ;
+
+
+function resizeGally () {
+	var width =  document.body.scrollWidth;
+	var height = document.documentElement.clientHeight;
+	
+	// 가로가 클때
+	if(width * 116 > 180 * height ) {
+		
+		$('.spot_bg_img img').addClass("portrait");
+		$('#g2').addClass("portrait");
+		$('#g1').addClass("portrait");
+	} else {
+		
+		$('.spot_bg_img img').removeClass("portrait");
+		$('#g2').removeClass("portrait");
+		$('#g1').removeClass("portrait");
+	}
+}
+
+resizeGally();
+
+$(".clse").on("click", function() {
+	$('#movie').hide();
+	$('#movie2').hide();
+	$('#movieDim').hide();
+	$("body").css({overflow:'scroll'});
+});
+
+$(".showMovie").on("click", function(event) {
+	if($(this).data("movie") == 1) {
+		$('#movie').show();
+		$('#movie2').hide();
+		$('#movieDim').show();
+		$("body").css({overflow:'hidden'})
+	} else {
+		$('#movie2').show();
+		$('#movie').hide();
+		$('#movieDim').show();
+		$("body").css({overflow:'hidden'})
+	}
+});
+</script>
+ 
+
+
+
+			<!--  footer이 content안에 있어 기형적인 구조가됨.. -->	
+			
+
+
+<div class="footer">
+	<div class="cont">
+		<h2><a href="#"><span class="blind">LINE FRIEDNS</span></a></h2>
+		<div class="txt">
+			<ul class="foot_menu">
+			<li><a href="/partnership.do">제휴제안<!-- 제휴제안 --></a></li>
+			<li><a href="http://store.linefriends.com" target="_blank">온라인 스토어<!-- 온라인스토어 --></a></li>
+			<li><a href="/personal">개인정보 처리방침<!-- 개인정보 처리방침 --></a></li>
+			</ul>
+			
+			<ul class="info">
+			
+            
+            
+			
+		        <li class="first">라인프렌즈 주식회사<!-- 라인프렌즈 주식회사 --></li>
+	            <li>사업자등록번호: 726-87-00030<!-- 사업자등록번호 : 726-87-00030 --></li>
+	            <li>통신판매업 신고번호 : 2015-경기성남-0597<!-- 통신판매업 신고번호 : 2015-경기성남-0597 --></li>
+	            <li class="first">대표이사 : 김성훈<!-- 대표이사 : 김성훈 --></li>
+	            <li>서울 용산구 이태원로 200 라인프렌즈 5층 <!-- 서울 용산구 이태원로 200 라인프렌즈 5층 --></li>
+	            <li>linefriends@naver.com</li>
+	            <li>1544-5921</li>
+    		
+			
+    		</ul>
+			<address>Copyright &copy; LINE Friends All Rights Reserved</address>
+		</div>
+		<ul class="social_area">
+		<li class="social"><a href="https://www.facebook.com/linefriendskr" target="_blank"></a></li>
+		<li class="social2"><a href="http://instagram.com/linefriends" target="_blank"></a></li>
+		<li class="social3"><a href="https://twitter.com/linefriends_tw" target="_blank"></a></li>
+		<li class="social4"><a href="https://www.youtube.com/channel/UCI5adX4NHKtAk4P_Cofxtcw" target="_blank"></a></li>
+		<li class="social5"><a href="http://weibo.com/linefriendschina" target="_blank"></a></li>
+		</ul>
+	</div>
+</div>		
+		</div>
+		<!-- //content -->
+	</div>
+	<!-- //container -->
+</div>
+</body>
+</html>
+
+
+ 
